@@ -1,0 +1,51 @@
+# robots.txt for mosoft.ca
+# Last updated: 2025-11-09
+
+# Allow all search engines to crawl the site (English and Korean)
+User-agent: *
+Allow: /
+Allow: /ko/
+Disallow: /private/
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /*.json$
+Disallow: /api/
+
+# Explicitly allow sitemap
+Allow: /sitemap.xml
+
+# Allow access to CSS, JS, and images for proper rendering
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /images/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Google-specific rules
+User-agent: Googlebot
+Allow: /
+Allow: /ko/
+
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Bing-specific rules
+User-agent: Bingbot
+Allow: /
+Allow: /ko/
+
+# Sitemap location
+Sitemap: https://mosoft.ca/sitemap.xml
+
+# Note: This robots.txt allows crawling of:
+# 1. English pages (/)
+# 2. Korean pages (/ko/)
+# 3. All assets for proper rendering
+# 4. Blocks only private/admin areas
