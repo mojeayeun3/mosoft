@@ -1730,3 +1730,263 @@ body.is-article-visible #footer {
 body.is-preload #footer {
     opacity: 0;
 }
+
+
+/* ================================================
+   PORTFOLIO GRID STYLES
+   ================================================ */
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.portfolio-card {
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 180, 216, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 180, 216, 0.2);
+}
+
+.portfolio-card-image {
+    position: relative;
+    width: 100%;
+    padding-bottom: 60%;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.portfolio-card-image img {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.portfolio-card:hover .portfolio-card-image img {
+    transform: scale(1.05);
+}
+
+.photo-count {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 180, 216, 0.9);
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+}
+
+.portfolio-card-info {
+    padding: 1.25rem;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.portfolio-card-info h3 {
+    margin: 0 0 0.5rem 0;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.portfolio-card-info p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+
+/* ================================================
+   LIGHTBOX MODAL STYLES
+   ================================================ */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 100001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.lightbox.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px 20px 20px;
+}
+
+.lightbox-image-container {
+    max-width: 100%;
+    max-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.lightbox-image-container img {
+    max-width: 95%;
+    max-height: 75vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: color 0.3s;
+    z-index: 100002;
+}
+
+.lightbox-close:hover {
+    color: #00b4d8;
+}
+
+.lightbox-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 180, 216, 0.8);
+    color: #fff;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.lightbox-btn:hover {
+    background: rgba(0, 180, 216, 1);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.lightbox-prev {
+    left: 20px;
+}
+
+.lightbox-next {
+    right: 20px;
+}
+
+.lightbox-caption {
+    margin-top: 1.5rem;
+    text-align: center;
+    color: #fff;
+}
+
+.lightbox-caption h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+}
+
+.lightbox-caption p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+
+/* ================================================
+   RESPONSIVE DESIGN
+   ================================================ */
+
+@media screen and (max-width: 980px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+    .portfolio-card-info {
+        padding: 1rem;
+    }
+    .portfolio-card-info h3 {
+        font-size: 1rem;
+    }
+    .portfolio-card-info p {
+        font-size: 0.85rem;
+    }
+    .lightbox-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+    .lightbox-prev {
+        left: 10px;
+    }
+    .lightbox-next {
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .portfolio-card-image {
+        padding-bottom: 50%;
+    }
+    .lightbox-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1.25rem;
+    }
+    .lightbox-close {
+        font-size: 30px;
+        top: -35px;
+    }
+    .lightbox-content {
+        padding: 60px 10px 15px 10px;
+        max-width: 95%;
+        max-height: 95%;
+    }
+    .lightbox-image-container {
+        padding: 10px;
+    }
+}
