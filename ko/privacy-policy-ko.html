@@ -27,15 +27,18 @@
     <link rel="apple-touch-icon" href="../images/logo.png">
 
     <!-- Google Fonts for Korean -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="../assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+    <noscript>
+        <link rel="stylesheet" href="../assets/css/noscript.css" />
+    </noscript>
 
     <!-- Custom styles for static page display -->
     <style>
         /* Korean font support */
-        
+
         body,
         h1,
         h2,
@@ -51,26 +54,27 @@
         textarea {
             font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         }
+
         /* Force main content to display immediately */
-        
+
         * {
             box-sizing: border-box;
         }
-        
+
         body {
             overflow-y: auto !important;
             overflow-x: hidden !important;
         }
-        
+
         #wrapper {
             opacity: 1 !important;
         }
-        
+
         #main {
             display: flex !important;
             opacity: 1 !important;
         }
-        
+
         #main article {
             display: block !important;
             opacity: 1 !important;
@@ -82,7 +86,7 @@
             overflow-wrap: break-word;
             word-wrap: break-word;
         }
-        
+
         #main article h2,
         #main article h3,
         #main article p,
@@ -94,93 +98,97 @@
             word-wrap: break-word;
             hyphens: auto;
         }
-        
+
         #main article a {
             word-break: break-all;
         }
+
         /* Hide close button completely */
-        
+
         .close {
             display: none !important;
         }
+
         /* Ensure header is visible */
-        
+
         #header {
             display: flex !important;
             visibility: visible !important;
             position: relative !important;
         }
-        
+
         #header .logo {
             display: flex !important;
         }
-        
+
         #header .content {
             display: block !important;
         }
-        
+
         #header .content .inner {
             display: block !important;
         }
-        
+
         #header nav {
             display: block !important;
         }
-        
+
         #header nav ul {
             display: flex !important;
         }
-        
+
         body:not(.is-preload) #header {
             opacity: 1;
             transform: none !important;
         }
-        
+
         body:not(.is-preload) #header .logo {
             opacity: 1;
         }
-        
+
         body:not(.is-preload) #header .content {
             opacity: 1;
         }
-        
+
         body:not(.is-preload) #header .content .inner {
             padding: 3rem 2rem !important;
             max-height: none !important;
             opacity: 1;
         }
-        
+
         body:not(.is-preload) #header .content .inner h1 {
             opacity: 1;
             color: #fff;
             font-weight: 600;
         }
-        
+
         body:not(.is-preload) #header .content .inner p {
             opacity: 1;
             color: rgba(255, 255, 255, 0.9);
         }
-        
+
         body:not(.is-preload) #header nav {
             opacity: 1;
         }
-        
+
         body:not(.is-preload) #header nav ul {
             opacity: 1;
         }
-        
+
         body:not(.is-preload) #header nav ul li a {
             opacity: 1;
             color: #fff;
         }
+
         /* Make sure background is visible */
-        
+
         #bg {
             opacity: 1 !important;
             transform: none !important;
         }
+
         /* Language Switcher */
-        
+
         .language-switcher {
             position: fixed;
             top: 20px;
@@ -192,7 +200,7 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(10px);
         }
-        
+
         .language-switcher a {
             color: #fff;
             text-decoration: none;
@@ -202,102 +210,124 @@
             border-radius: 15px;
             transition: all 0.3s;
         }
-        
+
         .language-switcher a:hover {
             background: rgba(0, 180, 216, 0.3);
         }
-        
+
         .language-switcher a.active {
             background: #00b4d8;
             font-weight: 600;
         }
+
         /* Mobile Responsive Styles */
-        
+
         @media screen and (max-width: 736px) {
             .language-switcher {
                 top: 10px;
                 right: 10px;
                 padding: 8px 12px;
             }
+
             .language-switcher a {
                 font-size: 0.85em;
                 padding: 4px 8px;
                 margin: 0 3px;
             }
+
             #main article {
                 padding: 2rem 1.5rem 0.1rem 1.5rem !important;
                 margin: 2rem auto !important;
             }
+
             #header .content .inner {
                 padding: 2rem 1.5rem !important;
             }
+
             #header .content .inner h1 {
                 font-size: 1.75rem;
             }
+
             #main article h2 {
                 font-size: 1.5rem;
             }
+
             #main article h3 {
                 font-size: 1.25rem;
             }
+
             #main article p,
             #main article li {
                 font-size: 0.95rem;
                 line-height: 1.6;
             }
+
             #header nav ul li {
                 margin: 0 0.5rem;
             }
+
             #footer {
                 padding: 2rem 1.5rem;
             }
+
             #footer nav {
                 font-size: 0.9rem;
             }
+
             #footer nav a {
                 display: inline-block;
                 margin: 5px 5px !important;
             }
         }
-        
+
         @media screen and (max-width: 480px) {
             .language-switcher {
                 top: 8px;
                 right: 8px;
                 padding: 6px 10px;
             }
+
             .language-switcher a {
                 font-size: 0.8em;
                 padding: 3px 6px;
                 margin: 0 2px;
             }
+
             #main article {
                 padding: 1.5rem 1rem 0.1rem 1rem !important;
                 margin: 1.5rem auto !important;
             }
+
             #header .content .inner {
                 padding: 1.5rem 1rem !important;
             }
+
             #header .content .inner h1 {
                 font-size: 1.5rem;
             }
+
             #header .content .inner p {
                 font-size: 0.9rem;
             }
+
             #main article h2 {
                 font-size: 1.35rem;
             }
+
             #main article h3 {
                 font-size: 1.15rem;
             }
+
             #main article p,
             #main article li {
                 font-size: 0.9rem;
             }
+
             .logo {
                 width: 60px !important;
                 height: 60px !important;
             }
+
             .logo img {
                 width: 35px !important;
                 height: 35px !important;
@@ -315,8 +345,10 @@
 
     <div id="wrapper">
         <header id="header">
-            <div class="logo" style="width:80px; height:80px; border-radius:50%; background:#000; border:2px solid #fff; display:flex; align-items:center; justify-content:center;">
-                <img src="../images/logo.png" alt="Mosoft - 토론토 AI SEO 전문 대행사 로고" width="44" height="44" style="width:44px; height:44px; object-fit:contain; display:block; image-rendering:-webkit-optimize-contrast; image-rendering:crisp-edges; position:relative; left:5%;">
+            <div class="logo"
+                style="width:80px; height:80px; border-radius:50%; background:#000; border:2px solid #fff; display:flex; align-items:center; justify-content:center;">
+                <img src="../images/logo.png" alt="Mosoft - 토론토 AI SEO 전문 대행사 로고" width="44" height="44"
+                    style="width:44px; height:44px; object-fit:contain; display:block; image-rendering:-webkit-optimize-contrast; image-rendering:crisp-edges; position:relative; left:5%;">
             </div>
             <div class="content">
                 <div class="inner">
@@ -338,7 +370,9 @@
                 <p><strong>발효일:</strong> 2025년 1월 1일</p>
                 <p><strong>최종 업데이트:</strong> 2025년 1월 1일</p>
 
-                <p><strong>Mosoft</strong>는 귀하의 개인정보를 보호하고 안전하게 관리하는 것을 최우선으로 생각합니다. 본 개인정보 처리방침은 저희 웹사이트 <a href="https://mosoft.ca" style="color:#00b4d8;">mosoft.ca</a>를 방문하실 때 어떻게 개인정보를 수집, 이용, 공개, 보호하는지 설명합니다.</p>
+                <p><strong>Mosoft</strong>는 귀하의 개인정보를 보호하고 안전하게 관리하는 것을 최우선으로 생각합니다. 본 개인정보 처리방침은 저희 웹사이트 <a
+                        href="https://mosoft.ca" style="color:#00b4d8;">mosoft.ca</a>를 방문하실 때 어떻게 개인정보를 수집, 이용, 공개,
+                    보호하는지 설명합니다.</p>
 
                 <h3>1. 수집하는 정보</h3>
                 <p>저희는 다음과 같은 유형의 정보를 수집할 수 있습니다:</p>
@@ -369,11 +403,14 @@
                 </ul>
 
                 <h3>3. Google Analytics</h3>
-                <p>저희는 Google Analytics를 사용하여 웹사이트 트래픽을 분석하고 사용자 경험을 개선합니다. Google Analytics는 익명으로 정보를 수집하며 개별 방문자를 식별하지 않고 웹사이트 트렌드를 보고합니다. <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener" style="color:#00b4d8;">Google Analytics 차단 브라우저 추가 기능</a>을
+                <p>저희는 Google Analytics를 사용하여 웹사이트 트래픽을 분석하고 사용자 경험을 개선합니다. Google Analytics는 익명으로 정보를 수집하며 개별 방문자를 식별하지
+                    않고 웹사이트 트렌드를 보고합니다. <a href="https://tools.google.com/dlpage/gaoptout" target="_blank"
+                        rel="noopener" style="color:#00b4d8;">Google Analytics 차단 브라우저 추가 기능</a>을
                     설치하여 데이터 수집을 거부하실 수 있습니다.</p>
 
                 <h3>4. 쿠키</h3>
-                <p>저희 웹사이트는 브라우징 경험을 향상시키기 위해 쿠키를 사용합니다. 쿠키는 귀하의 기기에 저장되는 작은 텍스트 파일로, 사이트 사용 방식을 이해하는 데 도움이 됩니다. 브라우저 설정을 통해 쿠키를 제어하실 수 있습니다.</p>
+                <p>저희 웹사이트는 브라우징 경험을 향상시키기 위해 쿠키를 사용합니다. 쿠키는 귀하의 기기에 저장되는 작은 텍스트 파일로, 사이트 사용 방식을 이해하는 데 도움이 됩니다. 브라우저
+                    설정을 통해 쿠키를 제어하실 수 있습니다.</p>
 
                 <h3>5. 정보 공유</h3>
                 <p>저희는 귀하의 개인정보를 제3자에게 판매, 거래 또는 임대하지 않습니다. 다음의 경우에만 정보를 공유할 수 있습니다:</p>
@@ -385,7 +422,8 @@
                 </ul>
 
                 <h3>6. 데이터 보안</h3>
-                <p>저희는 귀하의 개인정보를 무단 접근, 변경, 공개 또는 파괴로부터 보호하기 위해 적절한 기술적 및 조직적 조치를 구현합니다. 그러나 인터넷을 통한 전송 방법은 100% 안전하지 않습니다.</p>
+                <p>저희는 귀하의 개인정보를 무단 접근, 변경, 공개 또는 파괴로부터 보호하기 위해 적절한 기술적 및 조직적 조치를 구현합니다. 그러나 인터넷을 통한 전송 방법은 100% 안전하지
+                    않습니다.</p>
 
                 <h3>7. 귀하의 권리 (PIPEDA 준수)</h3>
                 <p>캐나다 개인정보보호 및 전자문서법(PIPEDA)에 따라 귀하는 다음과 같은 권리가 있습니다:</p>
@@ -398,32 +436,41 @@
                 </ul>
 
                 <h3>8. 데이터 보관</h3>
-                <p>저희는 본 개인정보 처리방침에 명시된 목적을 달성하는 데 필요한 기간 또는 법적으로 요구되는 기간 동안만 귀하의 개인정보를 보관합니다. 더 이상 필요하지 않을 경우 안전하게 삭제하거나 익명화합니다.</p>
+                <p>저희는 본 개인정보 처리방침에 명시된 목적을 달성하는 데 필요한 기간 또는 법적으로 요구되는 기간 동안만 귀하의 개인정보를 보관합니다. 더 이상 필요하지 않을 경우 안전하게
+                    삭제하거나 익명화합니다.</p>
 
                 <h3>9. 제3자 링크</h3>
-                <p>저희 웹사이트에는 제3자 웹사이트 링크가 포함될 수 있습니다. 저희는 이러한 외부 사이트의 개인정보 보호 관행에 대해 책임지지 않습니다. 해당 사이트의 개인정보 처리방침을 검토하시기 바랍니다.</p>
+                <p>저희 웹사이트에는 제3자 웹사이트 링크가 포함될 수 있습니다. 저희는 이러한 외부 사이트의 개인정보 보호 관행에 대해 책임지지 않습니다. 해당 사이트의 개인정보 처리방침을 검토하시기
+                    바랍니다.</p>
 
                 <h3>10. 아동 개인정보 보호</h3>
                 <p>저희 서비스는 18세 미만의 개인을 대상으로 하지 않습니다. 저희는 고의로 아동의 개인정보를 수집하지 않습니다.</p>
 
                 <h3>11. 개인정보 처리방침 변경</h3>
-                <p>저희는 때때로 본 개인정보 처리방침을 업데이트할 수 있습니다. 모든 변경사항은 업데이트된 "최종 업데이트" 날짜와 함께 이 페이지에 게시됩니다. 정기적으로 이 방침을 검토하시기 바랍니다.</p>
+                <p>저희는 때때로 본 개인정보 처리방침을 업데이트할 수 있습니다. 모든 변경사항은 업데이트된 "최종 업데이트" 날짜와 함께 이 페이지에 게시됩니다. 정기적으로 이 방침을 검토하시기
+                    바랍니다.</p>
 
                 <h3>12. 문의하기</h3>
                 <p>본 개인정보 처리방침 또는 저희의 데이터 관행에 대해 질문이나 우려 사항이 있으시면 연락 주시기 바랍니다:</p>
 
-                <div style="margin:20px 0; padding:20px; background:rgba(255,255,255,0.03); border-radius:8px; border-left:3px solid #00b4d8;">
+                <div
+                    style="margin:20px 0; padding:20px; background:rgba(255,255,255,0.03); border-radius:8px; border-left:3px solid #00b4d8;">
                     <p><strong>Mosoft</strong><br> Unit 99, Richmond Hill, ON L4C 5W4<br>
-                        <strong>이메일:</strong> <a href="mailto:info@mosoft.ca" style="color:#00b4d8;">info@mosoft.ca</a><br>
-                        <strong>전화:</strong> <a href="tel:+14165672438" style="color:#00b4d8;">+1-416-567-2438</a></p>
+                        <strong>이메일:</strong> <a href="mailto:info@mosoft.ca"
+                            style="color:#00b4d8;">info@mosoft.ca</a><br>
+                        <strong>전화:</strong> <a href="tel:+14165672438" style="color:#00b4d8;">+1-416-567-2438</a>
+                    </p>
                 </div>
 
                 <div style="margin-top:30px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.1);">
-                    <p style="font-size:0.9em; color:#888;"><strong>동의:</strong> 저희 웹사이트를 사용함으로써 귀하는 본 개인정보 처리방침에 동의하고 그 조건에 따르는 것에 동의하는 것으로 간주됩니다.</p>
+                    <p style="font-size:0.9em; color:#888;"><strong>동의:</strong> 저희 웹사이트를 사용함으로써 귀하는 본 개인정보 처리방침에 동의하고 그
+                        조건에 따르는 것에 동의하는 것으로 간주됩니다.</p>
                 </div>
 
                 <div style="margin-top:30px;">
-                    <a href="index.html" style="display:inline-block; padding:12px 30px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:600;">← 홈으로 돌아가기</a>
+                    <a href="index.html"
+                        style="display:inline-block; padding:12px 30px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:600;">←
+                        홈으로 돌아가기</a>
                 </div>
             </article>
         </div>
@@ -431,18 +478,19 @@
         <footer id="footer">
             <div style="margin-bottom:20px;">
                 <p><strong>Mosoft</strong> – 토론토 AI SEO & 디지털 마케팅 전문</p>
-                <p>Unit 99, Richmond Hill, ON L4C 5W4 | <a href="tel:+14165672438">+1-416-567-2438</a> | <a href="mailto:info@mosoft.ca">info@mosoft.ca</a></p>
+                <p>Unit 99, Richmond Hill, ON L4C 5W4 | <a href="tel:+14165672438">+1-416-567-2438</a> | <a
+                        href="mailto:info@mosoft.ca">info@mosoft.ca</a></p>
             </div>
 
             <nav style="margin:20px 0;">
                 <a href="index.html#intro" style="margin:0 10px; color:#aaa;">회사소개</a> |
                 <a href="index.html#services" style="margin:0 10px; color:#aaa;">서비스</a> |
-                <a href="index.html#contact" style="margin:0 10px; color:#aaa;">무료상담</a> |
-                <a href="privacy-policy.html" style="margin:0 10px; color:#aaa;">개인정보처리방침</a> |
-                <a href="../sitemap.xml" style="margin:0 10px; color:#aaa;">사이트맵</a>
+                <a href="index.html#portfolio" style="margin:0 10px; color:#aaa;">포트폴리오</a> |
+                <a href="index.html#contact" style="margin:0 10px; color:#aaa;">무료상담</a>
             </nav>
 
-            <p class="copyright" style="margin-top:20px;">&copy; 2025 Mosoft. All Rights Reserved.</p>
+            <p class="copyright" style="margin-top:20px;">&copy; <span id="year">2025</span> Mosoft. All Rights
+                Reserved.</p>
         </footer>
     </div>
 
@@ -453,6 +501,11 @@
     <script src="../assets/js/breakpoints.min.js"></script>
     <script src="../assets/js/util.js"></script>
     <script src="../assets/js/main.js"></script>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

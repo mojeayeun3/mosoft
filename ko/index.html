@@ -21,14 +21,14 @@
         }
 
         // 페이지 로드가 끝난 후 3~4초 뒤에 불러오기 (값은 취향대로)
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             setTimeout(loadAnalytics, 4000);
         });
     </script>
 
 
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
 
     <!-- canonical -->
     <link rel="canonical" href="https://mosoft.ca/ko/">
@@ -40,7 +40,8 @@
 
     <!-- title & meta -->
     <title>토론토 SEO 서비스 | 한인 비즈니스 로컬 SEO · 웹사이트 제작 – Mosoft</title>
-    <meta name="description" content="토론토 SEO services 및 로컬 SEO 전문. GTA 한인 비즈니스를 위한 AI 기반 SEO, 구글 비즈니스 프로필 최적화, SEO 특화 웹사이트 제작. 무료 SEO 진단 제공." />
+    <meta name="description"
+        content="토론토 SEO services 및 로컬 SEO 전문. GTA 한인 비즈니스를 위한 AI 기반 SEO, 구글 비즈니스 프로필 최적화, SEO 특화 웹사이트 제작. 무료 SEO 진단 제공." />
     <meta name="author" content="Mosoft" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="geo.region" content="CA-ON" />
@@ -55,7 +56,8 @@
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Mosoft - 토론토 SEO 및 로컬 SEO 전문 에이전시" />
     <meta property="og:title" content="토론토 SEO 서비스 | 한인 비즈니스 로컬 SEO – Mosoft" />
-    <meta property="og:description" content="Toronto SEO services 및 로컬 SEO, 한인 비즈니스 특화 디지털 마케팅. 구글 비즈니스, 웹사이트 제작까지 한 번에." />
+    <meta property="og:description"
+        content="Toronto SEO services 및 로컬 SEO, 한인 비즈니스 특화 디지털 마케팅. 구글 비즈니스, 웹사이트 제작까지 한 번에." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://mosoft.ca/ko/" />
     <meta property="og:site_name" content="Mosoft - 토론토 SEO 에이전시" />
@@ -73,7 +75,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Korean Web Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
 
     <!-- Minimal Critical CSS: CLS Prevention Only -->
     <style>
@@ -91,34 +94,35 @@
             word-break: keep-all;
             line-height: 1.8;
         }
-        
+
         #header {
             min-height: 500px !important;
         }
-        
+
         #main {
             min-height: 400px !important;
         }
-        
+
         #footer {
             min-height: 350px !important;
         }
-        
+
         body.is-preload #header {
             filter: none !important;
             opacity: 1 !important;
         }
-        
+
         body.is-preload #header>* {
             opacity: 1 !important;
         }
-        
+
         body.is-preload #header .content .inner {
             max-height: none !important;
             opacity: 1 !important;
         }
+
         /* Language Switcher Style */
-        
+
         .language-switcher {
             position: fixed;
             top: 20px;
@@ -129,7 +133,7 @@
             border-radius: 20px;
             backdrop-filter: blur(10px);
         }
-        
+
         .language-switcher a {
             color: #fff;
             text-decoration: none;
@@ -137,59 +141,60 @@
             padding: 5px 10px;
             transition: color 0.3s;
         }
-        
+
         .language-switcher a:hover {
             color: #00b4d8;
         }
-        
+
         .language-switcher .active {
             color: #00b4d8;
             font-weight: 700;
         }
-        
+
         .language-switcher .separator {
             color: rgba(255, 255, 255, 0.5);
             margin: 0 5px;
         }
+
         /* Hero 아래 하이라이트 영역 (영문과 동일 구조) */
-        
+
         .home-highlights {
             max-width: 960px;
             margin: 2.5rem auto 1.5rem auto;
             padding: 0 1.5rem;
         }
-        
+
         .home-highlights .badges {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 1rem;
             margin-bottom: 2rem;
         }
-        
+
         .home-highlights .badge {
             background: rgba(0, 0, 0, 0.35);
             border-radius: 10px;
             padding: 1rem 1.25rem;
             border: 1px solid rgba(255, 255, 255, 0.06);
         }
-        
+
         .home-highlights .badge h3 {
             margin: 0 0 0.4rem 0;
             font-size: 1.02rem;
         }
-        
+
         .home-highlights .badge p {
             margin: 0;
             font-size: 0.9rem;
             opacity: 0.9;
         }
-        
+
         .home-highlights .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1rem;
         }
-        
+
         .home-highlights .service-card {
             display: block;
             text-decoration: none;
@@ -199,26 +204,26 @@
             border: 1px solid rgba(255, 255, 255, 0.06);
             transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease;
         }
-        
+
         .home-highlights .service-card h4 {
             margin: 0 0 0.4rem 0;
             font-size: 0.98rem;
             font-weight: 600;
         }
-        
+
         .home-highlights .service-card p {
             margin: 0;
             font-size: 0.88rem;
             opacity: 0.9;
         }
-        
+
         .home-highlights .service-card:hover {
             transform: translateY(-3px);
             background: rgba(0, 180, 216, 0.10);
             border-color: rgba(0, 180, 216, 0.6);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
         }
-        
+
         @media screen and (max-width: 425px) {
             h2.major {
                 font-size: 1.0em !important;
@@ -228,7 +233,7 @@
                 overflow-wrap: break-word !important;
             }
         }
-        
+
         @media screen and (max-width: 480px) {
             .language-switcher {
                 right: auto !important;
@@ -241,7 +246,9 @@
     <!-- Load CSS async -->
     <link rel="preload" href="../assets/css/main.css?v=20251108_6.1" as="style">
     <link rel="stylesheet" href="../assets/css/main.css?v=20251118_1.0" />
-    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+    <noscript>
+        <link rel="stylesheet" href="../assets/css/noscript.css" />
+    </noscript>
 
     <!-- JSON-LD: Organization Schema -->
     <script type="application/ld+json">
@@ -385,14 +392,17 @@
 
     <div id="wrapper">
         <header id="header">
-            <div class="logo" style="width:80px; height:80px; border-radius:50%; background:#000; border:2px solid #fff; display:flex; align-items:center; justify-content:center;">
-                <img src="../images/logo.png" alt="Mosoft - 토론토 SEO 에이전시 로고" width="44" height="44" loading="eager" style="width:44px; height:44px; object-fit:contain; display:block; image-rendering:-webkit-optimize-contrast; image-rendering:crisp-edges; position:relative; left:5%;">
+            <div class="logo"
+                style="width:80px; height:80px; border-radius:50%; background:#000; border:2px solid #fff; display:flex; align-items:center; justify-content:center;">
+                <img src="../images/logo.png" alt="Mosoft - 토론토 SEO 에이전시 로고" width="44" height="44" loading="eager"
+                    style="width:44px; height:44px; object-fit:contain; display:block; image-rendering:-webkit-optimize-contrast; image-rendering:crisp-edges; position:relative; left:5%;">
             </div>
             <div class="content">
                 <div class="inner">
                     <h1>토론토 SEO 서비스 & 한인 비즈니스 로컬 SEO 에이전시</h1>
                     <p>
-                        <strong>Toronto SEO services</strong>와 <strong>로컬 SEO</strong>에 특화된 한인 디지털 마케팅 파트너.<br/> GTA 한인 비즈니스의 구글 노출, 전화 문의, 방문 고객을 실제로 늘려드립니다.
+                        <strong>Toronto SEO services</strong>와 <strong>로컬 SEO</strong>에 특화된 한인 디지털 마케팅 파트너.<br /> GTA 한인
+                        비즈니스의 구글 노출, 전화 문의, 방문 고객을 실제로 늘려드립니다.
                     </p>
                 </div>
             </div>
@@ -437,18 +447,21 @@
             <article id="intro">
                 <h2 class="major">토론토 한인 비즈니스 SEO 전문</h2>
                 <p><strong>Mosoft</strong>는 토론토·GTA 지역 <strong>한인 비즈니스</strong>를 위한
-                    <strong>SEO services Toronto</strong>와 <strong>로컬 SEO</strong>, 웹사이트 제작에 특화된 디지털 마케팅 에이전시입니다.</p>
+                    <strong>SEO services Toronto</strong>와 <strong>로컬 SEO</strong>, 웹사이트 제작에 특화된 디지털 마케팅 에이전시입니다.
+                </p>
 
                 <p>
-                    “홈페이지는 있는데, 구글에서 검색해도 안 나와요”<br/> “우리 가게 이름을 검색해야 겨우 뜹니다”<br/> 대부분의 한인 업소 사장님들이 겪는 공통적인 고민입니다.
+                    “홈페이지는 있는데, 구글에서 검색해도 안 나와요”<br /> “우리 가게 이름을 검색해야 겨우 뜹니다”<br /> 대부분의 한인 업소 사장님들이 겪는 공통적인 고민입니다.
                 </p>
 
                 <p>
                     우리는 단순히 방문자 수만 늘리는 것이 아니라,
-                    <strong>전화·예약·문의·방문으로 이어지는 실질적인 결과</strong>를 목표로 합니다. Toronto SEO agency의 관점과 한인 커뮤니티 감각을 동시에 반영한 전략을 사용합니다.
+                    <strong>전화·예약·문의·방문으로 이어지는 실질적인 결과</strong>를 목표로 합니다. Toronto SEO agency의 관점과 한인 커뮤니티 감각을 동시에 반영한
+                    전략을 사용합니다.
                 </p>
 
-                <div style="margin:30px 0; padding:25px; background:linear-gradient(135deg, rgba(0,180,216,0.15), rgba(0,180,216,0.05)); border-radius:10px; border-left:4px solid #00b4d8;">
+                <div
+                    style="margin:30px 0; padding:25px; background:linear-gradient(135deg, rgba(0,180,216,0.15), rgba(0,180,216,0.05)); border-radius:10px; border-left:4px solid #00b4d8;">
                     <h3 style="margin-top:0; color:#00b4d8;">🎯 왜 Mosoft인가?</h3>
                     <ul style="margin-bottom:0;">
                         <li><strong>한인 비즈니스 특화:</strong> 식당, 학원, 부동산, 마트, 미용실 등 업종별 맞춤 전략</li>
@@ -470,11 +483,17 @@
                 </ul>
 
                 <div style="margin-top:30px; padding:20px; background:rgba(255,255,255,0.04); border-radius:8px;">
-                    <p><strong>📍 서비스 지역:</strong> Toronto, Richmond Hill, Markham, Vaughan, North York, Scarborough, Mississauga, Brampton 등 GTA 전역</p>
+                    <p><strong>📍 서비스 지역:</strong> <a href="./local-seo/toronto-seo.html">Toronto</a> | <a
+                            href="./local-seo/richmond-hill-seo.html">Richmond Hill</a> | <a
+                            href="./local-seo/markham-seo.html">Markham</a> | <a href="../vaughan-seo.html">Vaughan</a>
+                        | <a href="./local-seo/north-york-seo.html">North York</a> | <a
+                            href="./local-seo/scarborough-seo.html">Scarborough</a> | <a
+                            href="./local-seo/mississauga-brampton-seo.html">Mississauga & Brampton</a> 등 GTA 전역</p>
                 </div>
 
                 <div style="margin-top:40px; text-align:center;">
-                    <a href="#contact" style="display:inline-block; padding:14px 38px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:700; font-size:1.05em;">
+                    <a href="#contact"
+                        style="display:inline-block; padding:14px 38px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:700; font-size:1.05em;">
                         무료 SEO 진단 받기 →
                     </a>
                 </div>
@@ -538,10 +557,13 @@
                     <li>접근성·반응형·속도까지 고려한 UI/UX 디자인</li>
                 </ul>
 
-                <div style="margin-top:40px; padding:25px; background:linear-gradient(135deg, rgba(0,180,216,0.1), rgba(0,180,216,0.05)); border-radius:10px; border:1px solid rgba(0,180,216,0.3); text-align:center;">
+                <div
+                    style="margin-top:40px; padding:25px; background:linear-gradient(135deg, rgba(0,180,216,0.1), rgba(0,180,216,0.05)); border-radius:10px; border:1px solid rgba(0,180,216,0.3); text-align:center;">
                     <h4 style="color:#00b4d8; margin-top:0; font-size:1.2em;">🚀 우리 업소도 검색 상단에 올릴 수 있을까요?</h4>
-                    <p style="margin-bottom:18px;">무료 진단을 통해 <strong>현재 순위, 경쟁 상황, 3~6개월 예상 목표</strong>를 구체적으로 보여드립니다.</p>
-                    <a href="#contact" style="display:inline-block; padding:14px 34px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:700;">
+                    <p style="margin-bottom:18px;">무료 진단을 통해 <strong>현재 순위, 경쟁 상황, 3~6개월 예상 목표</strong>를 구체적으로 보여드립니다.
+                    </p>
+                    <a href="#contact"
+                        style="display:inline-block; padding:14px 34px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:700;">
                         무료 SEO 진단 신청 →
                     </a>
                 </div>
@@ -558,7 +580,8 @@
                     <!-- 프로젝트 1 - 사진 7개 -->
                     <div class="portfolio-card" data-project="1">
                         <div class="portfolio-card-image">
-                            <img src="/images/portfolio/01_01_Coway_main_top_page.png" alt="코웨이 캐나다 반응형 웹사이트 리뉴얼 - SEO 최적화 홈페이지" loading="lazy">
+                            <img src="/images/portfolio/01_01_Coway_main_top_page.png"
+                                alt="[진행중]코웨이 캐나다 반응형 웹사이트 리뉴얼 - SEO 최적화 홈페이지" loading="lazy">
                             <div class="photo-count">7개 사진</div>
                         </div>
                         <div class="portfolio-card-info">
@@ -570,7 +593,8 @@
                     <!-- 프로젝트 2 - 사진 4개 -->
                     <div class="portfolio-card" data-project="2">
                         <div class="portfolio-card-image">
-                            <img src="/images/portfolio/02_01_David_Reno_Spped_check.png" alt="David Renovation 웹사이트 - SEO 최적화 및 속도 개선" loading="lazy">
+                            <img src="/images/portfolio/02_01_David_Reno_Spped_check.png"
+                                alt="[진행중]David Renovation 웹사이트 - SEO 최적화 및 속도 개선" loading="lazy">
                             <div class="photo-count">4개 사진</div>
                         </div>
                         <div class="portfolio-card-info">
@@ -582,7 +606,8 @@
                     <!-- 프로젝트 3 - 사진 1개 -->
                     <div class="portfolio-card" data-project="3">
                         <div class="portfolio-card-image">
-                            <img src="/images/portfolio/03_mosoft_bitcoin_treading_system.png" alt="AI 기반 비트코인 자동매매 시스템 대시보드" loading="lazy">
+                            <img src="/images/portfolio/03_mosoft_bitcoin_treading_system.png"
+                                alt="AI 기반 비트코인 자동매매 시스템 대시보드" loading="lazy">
                         </div>
                         <div class="portfolio-card-info">
                             <h3>AI 비트코인 자동매매 시스템</h3>
@@ -593,7 +618,8 @@
                     <!-- 프로젝트 4 - 사진 1개 -->
                     <div class="portfolio-card" data-project="4">
                         <div class="portfolio-card-image">
-                            <img src="/images/portfolio/04_uphereworship_church_homepage.png" alt="위로교회 반응형 웹사이트 - 심플한 교회 홈페이지 디자인" loading="lazy">
+                            <img src="/images/portfolio/04_uphereworship_church_homepage.png"
+                                alt="위로교회 반응형 웹사이트 - 심플한 교회 홈페이지 디자인" loading="lazy">
                         </div>
                         <div class="portfolio-card-info">
                             <h3>위로교회 반응형 웹사이트</h3>
@@ -604,7 +630,8 @@
                     <!-- 프로젝트 5 - 사진 3개 -->
                     <div class="portfolio-card" data-project="5">
                         <div class="portfolio-card-image">
-                            <img src="/images/portfolio/05_01_LemonTree_S_S_homepage.png" alt="LemonTree 한인 스시 레스토랑 웹사이트 - 심플한 메뉴 디자인" loading="lazy">
+                            <img src="/images/portfolio/05_01_LemonTree_S_S_homepage.png"
+                                alt="LemonTree 한인 스시 레스토랑 웹사이트 - 심플한 메뉴 디자인" loading="lazy">
                             <div class="photo-count">2개 사진</div>
                         </div>
                         <div class="portfolio-card-info">
@@ -616,7 +643,8 @@
                     <!-- 프로젝트 6 - 사진 2개 -->
                     <div class="portfolio-card" data-project="6">
                         <div class="portfolio-card-image">
-                            <img src="/images/portfolio/06_01_Gorudoya_menu.png" alt="Gorudoya 한인 스시 레스토랑 웹사이트 - 미니멀 디자인" loading="lazy">
+                            <img src="/images/portfolio/06_01_Gorudoya_menu.png"
+                                alt="Gorudoya 한인 스시 레스토랑 웹사이트 - 미니멀 디자인" loading="lazy">
                             <div class="photo-count">2개 사진</div>
                         </div>
                         <div class="portfolio-card-info">
@@ -628,7 +656,8 @@
                     <!-- 프로젝트 7 - 사진 1개 -->
                     <div class="portfolio-card" data-project="7">
                         <div class="portfolio-card-image">
-                            <img src="/images/portfolio/07_Korea_order_system.png" alt="한인 음식 배달 주문 시스템 - 모바일 최적화 플랫폼" loading="lazy">
+                            <img src="/images/portfolio/07_Korea_order_system.png" alt="한인 음식 배달 주문 시스템 - 모바일 최적화 플랫폼"
+                                loading="lazy">
                         </div>
                         <div class="portfolio-card-info">
                             <h3>한인 음식 배달 주문 플랫폼</h3>
@@ -639,7 +668,8 @@
                     <!-- 프로젝트 8 - 사진 1개 -->
                     <div class="portfolio-card" data-project="8">
                         <div class="portfolio-card-image">
-                            <img src="/images/portfolio/08_infonetworks.png" alt="토론토 한인 부동산 중개인 정보 공유 플랫폼" loading="lazy">
+                            <img src="/images/portfolio/08_infonetworks.png" alt="토론토 한인 부동산 중개인 정보 공유 플랫폼"
+                                loading="lazy">
                         </div>
                         <div class="portfolio-card-info">
                             <h3>토론토 한인 부동산 정보 공유 플랫폼</h3>
@@ -650,7 +680,8 @@
                     <!-- 프로젝트 9 - 사진 1개 -->
                     <div class="portfolio-card" data-project="9">
                         <div class="portfolio-card-image">
-                            <img src="/images/portfolio/09_Goohagi_app.png" alt="구하기 - 토론토 한인 비즈니스 연결 서비스 플랫폼" loading="lazy">
+                            <img src="/images/portfolio/09_Goohagi_app.png" alt="구하기 - 토론토 한인 비즈니스 연결 서비스 플랫폼"
+                                loading="lazy">
                         </div>
                         <div class="portfolio-card-info">
                             <h3>구하기 - 토론토 한인 비즈니스 연결 서비스</h3>
@@ -661,7 +692,8 @@
                     <!-- 프로젝트 10 - 사진 2개 -->
                     <div class="portfolio-card" data-project="10">
                         <div class="portfolio-card-image">
-                            <img src="/images/portfolio/10_01_fanbattle_main.png" alt="Fanbattle 캐나다 아이스하키 팀 구성 및 베팅 시스템" loading="lazy">
+                            <img src="/images/portfolio/10_01_fanbattle_main.png"
+                                alt="Fanbattle 캐나다 아이스하키 팀 구성 및 베팅 시스템" loading="lazy">
                             <div class="photo-count">2개 사진</div>
                         </div>
                         <div class="portfolio-card-info">
@@ -673,7 +705,8 @@
                     <!-- 프로젝트 11 - 사진 1개 -->
                     <div class="portfolio-card" data-project="11">
                         <div class="portfolio-card-image">
-                            <img src="/images/portfolio/11_01_KSOX.png" alt="SOX 내부통제 웹 시스템 - 기업 컴플라이언스 관리" loading="lazy">
+                            <img src="/images/portfolio/11_01_KSOX.png" alt="SOX 내부통제 웹 시스템 - 기업 컴플라이언스 관리"
+                                loading="lazy">
                         </div>
                         <div class="portfolio-card-info">
                             <h3>SOX 내부통제 웹 시스템</h3>
@@ -683,12 +716,15 @@
 
                 </div>
 
-                <div style="margin-top:40px; padding:25px; background:linear-gradient(135deg, rgba(0,180,216,0.1), rgba(0,180,216,0.05)); border-radius:8px; border:1px solid rgba(0,180,216,0.3);">
+                <div
+                    style="margin-top:40px; padding:25px; background:linear-gradient(135deg, rgba(0,180,216,0.1), rgba(0,180,216,0.05)); border-radius:8px; border:1px solid rgba(0,180,216,0.3);">
                     <h4 style="color:#00b4d8; margin-top:0;">🚀 비즈니스에 맞는 맞춤 솔루션이 필요하신가요?</h4>
                     <p style="margin-bottom:15px;">
                         SEO 대시보드부터 맞춤형 웹 애플리케이션까지, 귀사의 니즈에 맞춰 제작해드립니다.
                     </p>
-                    <p><a href="#contact" style="display:inline-block; padding:12px 30px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:600; transition:background 0.3s;">상담 신청하기 →</a></p>
+                    <p><a href="#contact"
+                            style="display:inline-block; padding:12px 30px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:600; transition:background 0.3s;">상담
+                            신청하기 →</a></p>
                 </div>
             </article>
 
@@ -715,7 +751,7 @@
 
                 <h3>1. 무료 상담 (15~30분)</h3>
                 <p>
-                    업종, 위치, 타깃 고객, 현재 온라인 상황을 간단히 파악합니다.<br/> 한국어로 편하게 질문하시고, 궁금한 점을 모두 물어보셔도 좋습니다.
+                    업종, 위치, 타깃 고객, 현재 온라인 상황을 간단히 파악합니다.<br /> 한국어로 편하게 질문하시고, 궁금한 점을 모두 물어보셔도 좋습니다.
                 </p>
 
                 <h3>2. 진단 & 전략 설계</h3>
@@ -729,7 +765,7 @@
 
                 <h3>3. 실행 (Implementation)</h3>
                 <p>
-                    사장님께서 방향과 예산에 동의하시면, 저희가 실제 작업을 진행합니다.<br/> 웹사이트 수정, 콘텐츠 제작, 로컬 SEO 셋업, 구글 비즈니스 관리 등
+                    사장님께서 방향과 예산에 동의하시면, 저희가 실제 작업을 진행합니다.<br /> 웹사이트 수정, 콘텐츠 제작, 로컬 SEO 셋업, 구글 비즈니스 관리 등
                     <strong>바쁜 사장님 대신 대부분을 저희가 처리</strong>합니다.
                 </p>
 
@@ -744,10 +780,13 @@
 
                 <p>숫자와 예시 중심으로 설명드리기 때문에, 마케팅이 처음이신 사장님도 쉽게 이해하실 수 있습니다.</p>
 
-                <div style="margin-top:40px; padding:25px; background:linear-gradient(135deg, rgba(0,180,216,0.1), rgba(0,180,216,0.05)); border-radius:10px; border:1px solid rgba(0,180,216,0.3); text-align:center;">
+                <div
+                    style="margin-top:40px; padding:25px; background:linear-gradient(135deg, rgba(0,180,216,0.1), rgba(0,180,216,0.05)); border-radius:10px; border:1px solid rgba(0,180,216,0.3); text-align:center;">
                     <h4 style="color:#00b4d8; margin-top:0; font-size:1.2em;">🚀 우리 업소도 검색 상단에 올릴 수 있을까요?</h4>
-                    <p style="margin-bottom:18px;">무료 진단을 통해 <strong>현재 순위, 경쟁 상황, 3~6개월 예상 목표</strong>를 구체적으로 보여드립니다.</p>
-                    <a href="#contact" style="display:inline-block; padding:14px 34px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:700;">
+                    <p style="margin-bottom:18px;">무료 진단을 통해 <strong>현재 순위, 경쟁 상황, 3~6개월 예상 목표</strong>를 구체적으로 보여드립니다.
+                    </p>
+                    <a href="#contact"
+                        style="display:inline-block; padding:14px 34px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:700;">
                         무료 SEO 진단 신청 →
                     </a>
                 </div>
@@ -757,10 +796,11 @@
             <article id="contact">
                 <h2 class="major">상담 신청</h2>
                 <p style="font-size:1.05em;">
-                    <strong>“우리 비즈니스도 온라인에서 더 잘 보일 수 있을까?”</strong><br/> 그 질문에 대해, 실제 데이터와 사례를 바탕으로 답해드립니다.
+                    <strong>“우리 비즈니스도 온라인에서 더 잘 보일 수 있을까?”</strong><br /> 그 질문에 대해, 실제 데이터와 사례를 바탕으로 답해드립니다.
                 </p>
 
-                <div style="margin:30px 0; padding:25px; background:rgba(0,180,216,0.08); border-radius:10px; border-left:5px solid #00b4d8;">
+                <div
+                    style="margin:30px 0; padding:25px; background:rgba(0,180,216,0.08); border-radius:10px; border-left:5px solid #00b4d8;">
                     <h3 style="margin-top:0; color:#00b4d8;">💡 무료 상담 시 제공 내용</h3>
                     <ul style="margin-bottom:0;">
                         <li>현재 구글/지도 노출 상태 간단 진단</li>
@@ -772,7 +812,8 @@
 
                 <div style="margin:30px 0; padding:25px; background:rgba(255,255,255,0.03); border-radius:10px;">
                     <h3 style="margin-top:0;">📞 연락처</h3>
-                    <p><strong>📧 이메일:</strong> <a href="/cdn-cgi/l/email-protection#cca5a2aaa38ca1a3bfa3aab8e2afad" style="color:#00b4d8;"><span class="__cf_email__" data-cfemail="92fbfcf4fdd2fffde1fdf4e6bcf1f3">[email&#160;protected]</span></a></p>
+                    <p><strong>📧 이메일:</strong> <a href="mailto:info@mosoft.ca"
+                            style="color:#00b4d8;">info@mosoft.ca</a></p>
                     <p><strong>☎️ 전화:</strong> <a href="tel:+14165672438" style="color:#00b4d8;">+1-416-567-2438</a></p>
                     <p><strong>📍 주소:</strong> Unit 99, Richmond Hill, ON L4C 5W4</p>
                     <p><strong>🕒 상담 시간:</strong> 월–금, 오전 9시 ~ 오후 6시 (EST)</p>
@@ -783,23 +824,29 @@
                     <h3>🗺️ 서비스 지역</h3>
                     <p><strong>토론토 및 GTA 전 지역</strong>을 대상으로 합니다.</p>
                     <ul>
-                        <li>Toronto (Downtown, Midtown, Uptown)</li>
-                        <li>Richmond Hill · Thornhill · Markham · Vaughan · North York</li>
-                        <li>Scarborough · Mississauga · Brampton</li>
-                        <li>그 외 인근 지역은 문의 후 협의</li>
+                        <li><a href="./local-seo/toronto-seo-ko.html">Toronto</a></li>
+                        <li><a href="./local-seo/richmond-hill-seo-ko.html">Richmond Hill</a></li>
+                        <li><a href="./local-seo/markham-seo-ko.html">Markham</a></li>
+                        <li><a href="./local-seo/vaughan-seo-ko.html">Vaughan</a></li>
+                        <li><a href="./local-seo/north-york-seo-ko.html">North York</a></li>
+                        <li><a href="./local-seo/scarborough-seo-ko.html">Scarborough</a></li>
+                        <li><a href="./local-seo/mississauga-brampton-seo-ko.html">Mississauga & Brampton</a></li>
                     </ul>
                 </div>
 
-                <div style="margin:40px 0; padding:30px; background:linear-gradient(135deg, rgba(0,180,216,0.15), rgba(0,180,216,0.05)); border-radius:10px; text-align:center;">
+                <div
+                    style="margin:40px 0; padding:30px; background:linear-gradient(135deg, rgba(0,180,216,0.15), rgba(0,180,216,0.05)); border-radius:10px; text-align:center;">
                     <h3 style="margin-top:0; color:#00b4d8; font-size:1.4em;">🎯 지금이 제일 빠른 시점입니다</h3>
                     <p style="font-size:1.05em; margin:18px 0;">
                         경쟁 업소가 SEO를 시작하기 전에 먼저 움직이면, 같은 비용으로 더 큰 효과를 볼 수 있습니다.
                     </p>
                     <div style="margin-top:24px;">
-                        <a href="tel:+14165672438" style="display:inline-block; margin:8px; padding:16px 36px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:700;">
+                        <a href="tel:+14165672438"
+                            style="display:inline-block; margin:8px; padding:16px 36px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:700;">
                             📞 바로 전화하기
                         </a>
-                        <a href="/cdn-cgi/l/email-protection#4b22252d240b262438242d3f65282a" style="display:inline-block; margin:8px; padding:16px 36px; background:#333; color:#fff; text-decoration:none; border-radius:5px; font-weight:700;">
+                        <a href="mailto:info@mosoft.ca"
+                            style="display:inline-block; margin:8px; padding:16px 36px; background:#333; color:#fff; text-decoration:none; border-radius:5px; font-weight:700;">
                             📧 이메일로 문의하기
                         </a>
                     </div>
@@ -808,8 +855,10 @@
                 <div style="margin:30px 0;">
                     <h3>🌐 소셜 미디어</h3>
                     <p>
-                        <a href="https://www.facebook.com/mosoft.ca" target="_blank" rel="noopener noreferrer" style="margin-right:18px; color:#00b4d8;">📘 Facebook</a>
-                        <a href="https://www.instagram.com/mosoft.ca" target="_blank" rel="noopener noreferrer" style="color:#00b4d8;">📷 Instagram</a>
+                        <a href="https://www.facebook.com/mosoft.ca" target="_blank" rel="noopener noreferrer"
+                            style="margin-right:18px; color:#00b4d8;">📘 Facebook</a>
+                        <a href="https://www.instagram.com/mosoft.ca" target="_blank" rel="noopener noreferrer"
+                            style="color:#00b4d8;">📷 Instagram</a>
                     </p>
                 </div>
             </article>
@@ -819,7 +868,7 @@
             <p><strong>Mosoft</strong> – 토론토 SEO & 로컬 SEO · 한인 비즈니스 디지털 마케팅 전문</p>
             <p>Unit 99, Richmond Hill, ON L4C 5W4 |
                 <a href="tel:+14165672438">+1-416-567-2438</a> |
-                <a href="/cdn-cgi/l/email-protection#7b12151d143b161408141d0f55181a"><span class="__cf_email__" data-cfemail="e881868e87a885879b878e9cc68b89">[email&#160;protected]</span></a>
+                <a href="mailto:info@mosoft.ca" style="color:#00b4d8;">info@mosoft.ca</a>
             </p>
 
             <nav style="margin:20px 0;">
@@ -828,14 +877,11 @@
                 <a href="#portfolio" style="margin:0 10px; color:#aaa;">포트폴리오</a> |
                 <a href="#process" style="margin:0 10px; color:#aaa;">진행 방식</a> |
                 <a href="#contact" style="margin:0 10px; color:#aaa;">상담 신청</a> |
-                <a href="./privacy-policy.html" style="margin:0 10px; color:#aaa;">개인정보처리방침</a>
+                <a href="./privacy-policy-ko.html" style="margin:0 10px; color:#aaa;">개인정보처리방침</a>
             </nav>
 
-            <p style="font-size:0.9em; color:#888; margin-top:15px;">
-                <strong>주요 키워드:</strong> 토론토 SEO | Toronto SEO services | 한인 비즈니스 로컬 SEO | Local SEO Toronto | 구글 비즈니스 프로필 최적화 | 리치먼드힐 웹사이트 제작
-            </p>
-
-            <p class="copyright" style="margin-top:20px;">&copy; 2025 Mosoft. All Rights Reserved.</p>
+            <p class="copyright" style="margin-top:20px;">&copy; <span id="year">2025</span> Mosoft. All Rights
+                Reserved.</p>
         </footer>
     </div>
 
@@ -848,6 +894,14 @@
     <script src="../assets/js/util.js"></script>
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/portfolio-grid.js"></script>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Remove preload class immediately
+        document.body.classList.remove('is-preload');
+    </script>
 
 </body>
 

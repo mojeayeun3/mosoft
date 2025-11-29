@@ -9,7 +9,7 @@
     // Project data - configure your projects here
     const projects = {
         1: {
-            title: 'Coway Canada Website Redesign',
+            title: '[in progress]Coway Canada Website Redesign',
             photos: ['01_01_Coway_main_top_page.png',
                 '01_02_Coway_main_bottom_page.png',
                 '01_03_Coway_water_product_category_page.png',
@@ -20,7 +20,7 @@
             ]
         },
         2: {
-            title: 'David Renovation Website Optimization',
+            title: '[in progress]David Renovation Website Optimization',
             photos: ['02_01_David_Reno_Spped_check.png',
                 '02_02_David_Renovation_network_analysis.png',
                 '02_03_David_Renovation_SEO_keyword.png',

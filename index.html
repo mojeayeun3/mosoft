@@ -21,8 +21,8 @@
         }
 
         // 페이지 로드가 끝난 후 3~4초 뒤에 불러오기 (값은 취향대로)
-        window.addEventListener('load', function() {
-            setTimeout(loadAnalytics, 4000);
+        window.addEventListener('load', function () {
+            setTimeout(loadAnalytics, 3000);
         });
     </script>
 
@@ -40,8 +40,8 @@
 
     <!-- title & meta -->
     <title>Toronto SEO Services for Korean Businesses | Local SEO Agency GTA | Mosoft</title>
-    <meta name="description" content="Toronto SEO services and Local SEO agency for Korean businesses and local small businesses in GTA. AI-powered SEO, Google Business Profile optimization, and SEO-friendly web design. Get a free SEO audit from Mosoft."
-    />
+    <meta name="description"
+        content="Toronto SEO services and Local SEO agency for Korean businesses and local small businesses in GTA. AI-powered SEO, Google Business Profile optimization, and SEO-friendly web design. Get a free SEO audit from Mosoft." />
     <meta name="author" content="Mosoft" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="geo.region" content="CA-ON" />
@@ -56,7 +56,8 @@
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Mosoft - Toronto SEO Services for Korean Businesses" />
     <meta property="og:title" content="Toronto SEO Services & Local SEO Agency for Korean Businesses | Mosoft" />
-    <meta property="og:description" content="AI-powered Toronto SEO services and Local SEO for Korean businesses and local small businesses in GTA. Google Business Profile optimization and SEO-focused web design." />
+    <meta property="og:description"
+        content="AI-powered Toronto SEO services and Local SEO for Korean businesses and local small businesses in GTA. Google Business Profile optimization and SEO-focused web design." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://mosoft.ca" />
     <meta property="og:site_name" content="Mosoft – Toronto SEO Agency" />
@@ -65,7 +66,8 @@
     <meta name="twitter:image" content="https://mosoft.ca/images/og-image.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Toronto SEO Services & Local SEO Agency | Mosoft" />
-    <meta name="twitter:description" content="Local SEO and AI SEO services in Toronto for Korean businesses and local small businesses. Free SEO audit available." />
+    <meta name="twitter:description"
+        content="Local SEO and AI SEO services in Toronto for Korean businesses and local small businesses. Free SEO audit available." />
     <meta name="twitter:site" content="@mosoft_ca" />
 
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
@@ -79,30 +81,31 @@
         #header {
             min-height: 500px !important
         }
-        
+
         #main {
             min-height: 400px !important
         }
-        
+
         #footer {
             min-height: 350px !important
         }
-        
+
         body.is-preload #header {
             filter: none !important;
             opacity: 1 !important
         }
-        
+
         body.is-preload #header>* {
             opacity: 1 !important
         }
-        
+
         body.is-preload #header .content .inner {
             max-height: none !important;
             opacity: 1 !important
         }
+
         /* Language Switcher Style */
-        
+
         .language-switcher {
             position: fixed;
             top: 20px;
@@ -113,7 +116,7 @@
             border-radius: 20px;
             backdrop-filter: blur(10px);
         }
-        
+
         .language-switcher a {
             color: #fff;
             text-decoration: none;
@@ -121,60 +124,62 @@
             padding: 5px 10px;
             transition: color 0.3s;
         }
-        
+
         .language-switcher a:hover {
             color: #00b4d8;
         }
-        
+
         .language-switcher .active {
             color: #00b4d8;
             font-weight: 700;
         }
-        
+
         .language-switcher .separator {
             color: rgba(255, 255, 255, 0.5);
             margin: 0 5px;
         }
+
         /* Hero 아래 하이라이트 영역 */
-        
+
         .home-highlights {
             max-width: 960px;
             margin: 2.5rem auto 1rem auto;
             padding: 0 1.5rem;
         }
-        
+
         .home-highlights .badges {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 1rem;
             margin-bottom: 2rem;
         }
-        
+
         .home-highlights .badge {
             background: rgba(0, 0, 0, 0.35);
             border-radius: 10px;
             padding: 1rem 1.25rem;
             border: 1px solid rgba(255, 255, 255, 0.06);
         }
-        
+
         .home-highlights .badge h3 {
             margin: 0 0 0.35rem 0;
             font-size: 1.05rem;
         }
-        
+
         .home-highlights .badge p {
             margin: 0;
             font-size: 0.9rem;
             opacity: 0.9;
         }
+
         /* 서비스 카드 그리드 */
-        
+
         .home-highlights .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1rem;
         }
-        
+
         .home-highlights .service-card {
             display: block;
             text-decoration: none;
@@ -184,26 +189,26 @@
             border: 1px solid rgba(255, 255, 255, 0.06);
             transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease;
         }
-        
+
         .home-highlights .service-card h4 {
             margin: 0 0 0.4rem 0;
             font-size: 0.98rem;
             font-weight: 600;
         }
-        
+
         .home-highlights .service-card p {
             margin: 0;
             font-size: 0.88rem;
             opacity: 0.9;
         }
-        
+
         .home-highlights .service-card:hover {
             transform: translateY(-3px);
             background: rgba(0, 180, 216, 0.10);
             border-color: rgba(0, 180, 216, 0.6);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
         }
-        
+
         @media screen and (max-width: 425px) {
             h2.major {
                 font-size: 1.0em !important;
@@ -213,7 +218,7 @@
                 overflow-wrap: break-word !important;
             }
         }
-        
+
         @media screen and (max-width: 480px) {
             .language-switcher {
                 right: auto !important;
@@ -223,10 +228,10 @@
         }
     </style>
 
-    <!-- main.css를 먼저 preload 해서 LCP 앞당기기 -->
-    <link rel="preload" href="assets/css/main.css?v=20251108_6.1" as="style">
     <link rel="stylesheet" href="assets/css/main.css?v=20251108_6.1" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
 
 
     <!-- JSON-LD: Organization Schema -->
@@ -510,14 +515,19 @@
 
     <div id="wrapper">
         <header id="header">
-            <div class="logo" style="width:80px; height:80px; border-radius:50%; background:#000; border:2px solid #fff; display:flex; align-items:center; justify-content:center;">
-                <img src="images/logo.png" alt="Mosoft - Toronto SEO Agency Logo" width="44" height="44" loading="eager" fetchpriority="high" style="width:44px; height:44px; object-fit:contain; display:block; image-rendering:-webkit-optimize-contrast; image-rendering:crisp-edges; position:relative; left:5%;">
+            <div class="logo"
+                style="width:80px; height:80px; border-radius:50%; background:#000; border:2px solid #fff; display:flex; align-items:center; justify-content:center;">
+                <img src="images/logo.png" alt="Mosoft - Toronto SEO Agency Logo" width="44" height="44" loading="eager"
+                    fetchpriority="high"
+                    style="width:44px; height:44px; object-fit:contain; display:block; image-rendering:-webkit-optimize-contrast; image-rendering:crisp-edges; position:relative; left:5%;">
             </div>
             <div class="content">
                 <div class="inner">
                     <h1>Toronto SEO Services & Local SEO Agency for Small & Korean Businesses</h1>
                     <p>
-                        <strong>AI-powered SEO services Toronto</strong> and <strong>Local SEO strategies</strong> for Korean businesses and local small businesses in the Greater Toronto Area.<br /> Rank higher on Google, win more local customers, and
+                        <strong>AI-powered SEO services Toronto</strong> and <strong>Local SEO strategies</strong> for
+                        Korean businesses and local small businesses in the Greater Toronto Area.<br /> Rank higher on
+                        Google, win more local customers, and
                         grow with measurable results.
                     </p>
                 </div>
@@ -527,7 +537,8 @@
                 <div class="badges">
                     <div class="badge">
                         <h3>Toronto SEO Specialist</h3>
-                        <p>Local SEO &amp; Google Business Profile optimization for small businesses in Toronto &amp; GTA.</p>
+                        <p>Local SEO &amp; Google Business Profile optimization for small businesses in Toronto &amp;
+                            GTA.</p>
                     </div>
                     <div class="badge">
                         <h3>Focus on Korean Businesses</h3>
@@ -544,10 +555,6 @@
                     <a href="#services" class="service-card">
                         <h4>Local SEO &amp; Maps</h4>
                         <p>Google Maps (map pack) rankings, local citations, and review strategy.</p>
-                    </a>
-                    <a href="#portfolio" class="service-card">
-                        <h4>Portfolio</h4>
-                        <p>View our recent projects and custom web solutions.</p>
                     </a>
                     <a href="#services" class="service-card">
                         <h4>Google Business Profile</h4>
@@ -569,42 +576,67 @@
                 <p><strong>Digital growth partner for Korean and local small businesses in Toronto & GTA.</strong></p>
 
                 <p>
-                    Mosoft is a <strong>Toronto SEO agency</strong> based in <strong>Richmond Hill</strong>, specializing in
-                    <strong>SEO services Toronto</strong>, <strong>Local SEO services</strong>, and <strong>SEO-friendly web design</strong> for <strong>Korean businesses</strong> and local small businesses across the Greater Toronto Area.
+                    Mosoft is a <strong>Toronto SEO agency</strong> based in <strong>Richmond Hill</strong>,
+                    specializing in
+                    <strong>SEO services Toronto</strong>, <strong>Local SEO services</strong>, and <strong>SEO-friendly
+                        web design</strong> for <strong>Korean businesses</strong> and local small businesses across the
+                    Greater Toronto Area.
                 </p>
 
                 <p>
-                    Many Korean business owners in Toronto search in English but prefer working with someone who understands Korean culture and communication. We bridge that gap with <strong>bilingual support (English & Korean)</strong> and
+                    Many Korean business owners in Toronto search in English but prefer working with someone who
+                    understands Korean culture and communication. We bridge that gap with <strong>bilingual support
+                        (English & Korean)</strong> and
                     <strong>AI-powered SEO</strong> tailored to your neighbourhood and industry.
                 </p>
 
                 <h3>Why Korean & Local Businesses Choose Mosoft</h3>
                 <ul>
-                    <li><strong>Local Market Expertise:</strong> Deep understanding of Toronto, Richmond Hill, Markham, Vaughan, and North York markets</li>
-                    <li><strong>Focus on Korean Businesses:</strong> Experience working with Korean restaurants, retail shops, service businesses, and professional offices</li>
-                    <li><strong>AI-Powered Optimization:</strong> Smart keyword research, content optimization, and competitor tracking using AI</li>
-                    <li><strong>Local SEO First:</strong> Google Business Profile and map pack ranking are core to our strategy</li>
-                    <li><strong>Transparent Reporting:</strong> Simple dashboards showing keyword rankings, traffic, and local visibility</li>
+                    <li><strong>Local Market Expertise:</strong> Deep understanding of Toronto, Richmond Hill, Markham,
+                        Vaughan, and North York markets</li>
+                    <li><strong>Focus on Korean Businesses:</strong> Experience working with Korean restaurants, retail
+                        shops, service businesses, and professional offices</li>
+                    <li><strong>AI-Powered Optimization:</strong> Smart keyword research, content optimization, and
+                        competitor tracking using AI</li>
+                    <li><strong>Local SEO First:</strong> Google Business Profile and map pack ranking are core to our
+                        strategy</li>
+                    <li><strong>Transparent Reporting:</strong> Simple dashboards showing keyword rankings, traffic, and
+                        local visibility</li>
                 </ul>
 
                 <p>
-                    Instead of just “having a website,” we help you build a <strong>local search engine system</strong> that continuously brings in new customers from Google — especially people searching “near me” in Korean communities around Toronto.
+                    Instead of just “having a website,” we help you build a <strong>local search engine system</strong>
+                    that continuously brings in new customers from Google — especially people searching “near me” in
+                    Korean communities around Toronto.
                 </p>
 
-                <div style="margin-top:30px; padding:20px; background:rgba(255,255,255,0.05); border-left:4px solid #00b4d8;">
-                    <p><strong>📍 Serving Korean & local businesses in:</strong> Toronto | Richmond Hill | Markham | Vaughan | North York | Scarborough | Mississauga | Brampton</p>
-                    <p><a href="#contact" style="display:inline-block; padding:12px 30px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:600; transition:background 0.3s;">Get Your Free SEO Audit →</a></p>
+                <div
+                    style="margin-top:30px; padding:20px; background:rgba(255,255,255,0.05); border-left:4px solid #00b4d8;">
+                    <p><strong>📍 Serving Korean & local businesses in:</strong> <a
+                            href="./local-seo/toronto-seo.html">Toronto</a> | <a
+                            href="./local-seo/richmond-hill-seo.html">Richmond Hill</a> | <a
+                            href="./local-seo/markham-seo.html">Markham</a> | <a
+                            href="./local-seo/vaughan-seo.html">Vaughan</a>
+                        | <a href="./local-seo/north-york-seo.html">North York</a> | <a
+                            href="./local-seo/scarborough-seo.html">Scarborough</a> | <a
+                            href="./local-seo/mississauga-brampton-seo.html">Mississauga & Brampton</a></p>
+                    <p><a href="#contact"
+                            style="display:inline-block; padding:12px 30px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:600; transition:background 0.3s;">Get
+                            Your Free SEO Audit →</a></p>
                 </div>
             </article>
 
             <!-- SERVICES -->
             <article id="services">
                 <h2 class="major">SEO Services Toronto & GTA</h2>
-                <p><em>Toronto SEO services and Local SEO built for real local businesses – not just traffic, but customers.</em></p>
+                <p><em>Toronto SEO services and Local SEO built for real local businesses – not just traffic, but
+                        customers.</em></p>
 
                 <h3>🎯 Local SEO Services Toronto</h3>
                 <p>
-                    Capture customers searching <strong>“near me”</strong> on Google. Our <strong>Local SEO services Toronto</strong> package is ideal for restaurants, beauty salons, clinics, academies, home services, and Korean-owned businesses.
+                    Capture customers searching <strong>“near me”</strong> on Google. Our <strong>Local SEO services
+                        Toronto</strong> package is ideal for restaurants, beauty salons, clinics, academies, home
+                    services, and Korean-owned businesses.
                 </p>
                 <p><strong>Local SEO includes:</strong></p>
                 <ul>
@@ -616,11 +648,13 @@
                     <li>Local backlinks from relevant sites and directories</li>
                     <li>Competitor analysis for local search in Toronto & GTA</li>
                 </ul>
-                <p><em>Best for: Korean businesses and local shops who want to show up when customers search on mobile in their area.</em></p>
+                <p><em>Best for: Korean businesses and local shops who want to show up when customers search on mobile
+                        in their area.</em></p>
 
                 <h3>🤖 AI SEO Services – Smarter Toronto SEO</h3>
                 <p>
-                    Outrank competitors with <strong>AI SEO</strong>. We combine traditional SEO with AI tools to quickly discover what works in the Toronto search landscape and apply it at scale.
+                    Outrank competitors with <strong>AI SEO</strong>. We combine traditional SEO with AI tools to
+                    quickly discover what works in the Toronto search landscape and apply it at scale.
                 </p>
                 <p><strong>AI SEO features:</strong></p>
                 <ul>
@@ -634,7 +668,9 @@
 
                 <h3>🔧 Technical SEO Audit & Core Web Vitals</h3>
                 <p>
-                    A slow or poorly structured website will never rank well, even with good content. Our <strong>technical SEO audit</strong> fixes the foundation so that Google can fully trust and index your site.
+                    A slow or poorly structured website will never rank well, even with good content. Our
+                    <strong>technical SEO audit</strong> fixes the foundation so that Google can fully trust and index
+                    your site.
                 </p>
                 <p><strong>Technical SEO services:</strong></p>
                 <ul>
@@ -649,12 +685,14 @@
 
                 <h3>📝 SEO Content & Blog Strategy</h3>
                 <p>
-                    Content is how you build trust with both Google and your customers. We plan and create content that answers real questions from people in Toronto and Korean communities.
+                    Content is how you build trust with both Google and your customers. We plan and create content that
+                    answers real questions from people in Toronto and Korean communities.
                 </p>
                 <p><strong>Content strategy includes:</strong></p>
                 <ul>
                     <li>Keyword-optimized service pages for your main offerings</li>
-                    <li>Blog posts on topics such as “Toronto tap water safe?” or “How Local SEO helps Toronto small businesses”</li>
+                    <li>Blog posts on topics such as “Toronto tap water safe?” or “How Local SEO helps Toronto small
+                        businesses”</li>
                     <li>Location pages for neighbourhoods: North York, Thornhill, Markham, Vaughan, etc.</li>
                     <li>On-page optimization (H1/H2, meta title, meta description, alt text)</li>
                     <li>Internal linking structure that connects services, locations, and blog posts</li>
@@ -663,7 +701,8 @@
 
                 <h3>🎨 SEO-Friendly Web Design & Development</h3>
                 <p>
-                    We build fast, mobile-first, SEO-ready websites for Korean and local small businesses. Your homepage, service pages, and blog are structured from day one to support strong rankings.
+                    We build fast, mobile-first, SEO-ready websites for Korean and local small businesses. Your
+                    homepage, service pages, and blog are structured from day one to support strong rankings.
                 </p>
                 <p><strong>Web design & development:</strong></p>
                 <ul>
@@ -683,17 +722,22 @@
                 <ul>
                     <li>Google Analytics 4 setup and event tracking</li>
                     <li>Google Search Console monitoring for impressions, clicks, and queries</li>
-                    <li>Keyword ranking reports for main target terms (e.g., “Toronto SEO services”, “Local SEO Toronto”)</li>
+                    <li>Keyword ranking reports for main target terms (e.g., “Toronto SEO services”, “Local SEO
+                        Toronto”)</li>
                     <li>Local visibility and map pack ranking reports</li>
                     <li>Simple, visual reports that business owners can easily understand</li>
                 </ul>
 
-                <div style="margin-top:40px; padding:25px; background:linear-gradient(135deg, rgba(0,180,216,0.1), rgba(0,180,216,0.05)); border-radius:8px; border:1px solid rgba(0,180,216,0.3);">
+                <div
+                    style="margin-top:40px; padding:25px; background:linear-gradient(135deg, rgba(0,180,216,0.1), rgba(0,180,216,0.05)); border-radius:8px; border:1px solid rgba(0,180,216,0.3);">
                     <h4 style="color:#00b4d8; margin-top:0;">🚀 Ready to rank higher in Toronto?</h4>
                     <p style="margin-bottom:15px;">
-                        Get a <strong>free SEO audit</strong> for your website or Google Business Profile and discover how we can help your Korean or local small business appear above competitors in Toronto and GTA.
+                        Get a <strong>free SEO audit</strong> for your website or Google Business Profile and discover
+                        how we can help your Korean or local small business appear above competitors in Toronto and GTA.
                     </p>
-                    <p><a href="#contact" style="display:inline-block; padding:12px 30px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:600; transition:background 0.3s;">Get Your Free SEO Audit →</a></p>
+                    <p><a href="#contact"
+                            style="display:inline-block; padding:12px 30px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:600; transition:background 0.3s;">Get
+                            Your Free SEO Audit →</a></p>
                 </div>
             </article>
 
@@ -708,115 +752,136 @@
                     <!-- Project 1 - 7 photos -->
                     <div class="portfolio-card" data-project="1">
                         <div class="portfolio-card-image">
-                            <img src="/images/portfolio/01_01_Coway_main_top_page.png" alt="Coway Canada responsive website redesign - SEO optimized homepage" loading="lazy">
+                            <img src="/images/portfolio/01_01_Coway_main_top_page.png"
+                                alt="Coway Canada responsive website redesign - SEO optimized homepage" loading="lazy">
                             <div class="photo-count">7 photos</div>
                         </div>
                         <div class="portfolio-card-info">
                             <h3>Coway Canada Website Redesign</h3>
-                            <p>Complete website overhaul with SEO integration and responsive design. Enhanced mobile optimization and search visibility for increased customer acquisition.</p>
+                            <p>Complete website overhaul with SEO integration and responsive design. Enhanced mobile
+                                optimization and search visibility for increased customer acquisition.</p>
                         </div>
                     </div>
 
                     <!-- Project 2 - 4 photos -->
                     <div class="portfolio-card" data-project="2">
                         <div class="portfolio-card-image">
-                            <img src="/images/portfolio/02_01_David_Reno_Spped_check.png" alt="David Renovation website - SEO optimization and speed improvement" loading="lazy">
+                            <img src="/images/portfolio/02_01_David_Reno_Spped_check.png"
+                                alt="David Renovation website - SEO optimization and speed improvement" loading="lazy">
                             <div class="photo-count">4 photos</div>
                         </div>
                         <div class="portfolio-card-info">
                             <h3>David Renovation Website Optimization</h3>
-                            <p>SEO implementation and loading speed enhancement. Improved Google rankings and page performance for higher conversion rates.</p>
+                            <p>SEO implementation and loading speed enhancement. Improved Google rankings and page
+                                performance for higher conversion rates.</p>
                         </div>
                     </div>
 
                     <!-- Project 3 - 1 photo -->
                     <div class="portfolio-card" data-project="3">
                         <div class="portfolio-card-image">
-                            <img src="/images/portfolio/03_mosoft_bitcoin_treading_system.png" alt="AI-powered Bitcoin automated trading system dashboard" loading="lazy">
+                            <img src="/images/portfolio/03_mosoft_bitcoin_treading_system.png"
+                                alt="AI-powered Bitcoin automated trading system dashboard" loading="lazy">
                         </div>
                         <div class="portfolio-card-info">
                             <h3>AI Bitcoin Automated Trading System</h3>
-                            <p>AI-powered cryptocurrency automated trading platform. Real-time market analysis and automatic trade execution for maximized investment efficiency.</p>
+                            <p>AI-powered cryptocurrency automated trading platform. Real-time market analysis and
+                                automatic trade execution for maximized investment efficiency.</p>
                         </div>
                     </div>
 
                     <!-- Project 4 - 1 photo -->
                     <div class="portfolio-card" data-project="4">
                         <div class="portfolio-card-image">
-                            <img src="/images/portfolio/04_uphereworship_church_homepage.png" alt="Uphere Worship Church responsive website - minimalist church homepage design" loading="lazy">
+                            <img src="/images/portfolio/04_uphereworship_church_homepage.png"
+                                alt="Uphere Worship Church responsive website - minimalist church homepage design"
+                                loading="lazy">
                         </div>
                         <div class="portfolio-card-info">
                             <h3>Uphere Worship Church Responsive Website</h3>
-                            <p>Clean and intuitive church website design. Mobile-optimized for convenient worship information access across all devices.</p>
+                            <p>Clean and intuitive church website design. Mobile-optimized for convenient worship
+                                information access across all devices.</p>
                         </div>
                     </div>
 
                     <!-- Project 5 - 3 photos -->
                     <div class="portfolio-card" data-project="5">
                         <div class="portfolio-card-image">
-                            <img src="/images/portfolio/05_01_LemonTree_S_S_homepage.png" alt="LemonTree Korean sushi restaurant website - clean menu design" loading="lazy">
+                            <img src="/images/portfolio/05_01_LemonTree_S_S_homepage.png"
+                                alt="LemonTree Korean sushi restaurant website - clean menu design" loading="lazy">
                             <div class="photo-count">2 photos</div>
                         </div>
                         <div class="portfolio-card-info">
                             <h3>LemonTree Sushi Restaurant Website</h3>
-                            <p>Toronto Korean sushi and salad restaurant website. Clean menu design and online ordering system for enhanced customer convenience.</p>
+                            <p>Toronto Korean sushi and salad restaurant website. Clean menu design and online ordering
+                                system for enhanced customer convenience.</p>
                         </div>
                     </div>
 
                     <!-- Project 6 - 2 photos -->
                     <div class="portfolio-card" data-project="6">
                         <div class="portfolio-card-image">
-                            <img src="/images/portfolio/06_01_Gorudoya_menu.png" alt="Gorudoya Korean sushi restaurant website - minimalist design" loading="lazy">
+                            <img src="/images/portfolio/06_01_Gorudoya_menu.png"
+                                alt="Gorudoya Korean sushi restaurant website - minimalist design" loading="lazy">
                             <div class="photo-count">2 photos</div>
                         </div>
                         <div class="portfolio-card-info">
                             <h3>Gorudoya Sushi Restaurant Website</h3>
-                            <p>Toronto Korean sushi restaurant website. Minimalist design and mobile-friendly interface for seamless online reservations.</p>
+                            <p>Toronto Korean sushi restaurant website. Minimalist design and mobile-friendly interface
+                                for seamless online reservations.</p>
                         </div>
                     </div>
 
                     <!-- Project 7 - 1 photo -->
                     <div class="portfolio-card" data-project="7">
                         <div class="portfolio-card-image">
-                            <img src="/images/portfolio/07_Korea_order_system.png" alt="Korean food delivery ordering system - mobile-optimized platform" loading="lazy">
+                            <img src="/images/portfolio/07_Korea_order_system.png"
+                                alt="Korean food delivery ordering system - mobile-optimized platform" loading="lazy">
                         </div>
                         <div class="portfolio-card-info">
                             <h3>Korean Food Delivery Ordering Platform</h3>
-                            <p>Toronto Korean restaurant food ordering system. Mobile-optimized delivery platform with seamless ordering and payment integration.</p>
+                            <p>Toronto Korean restaurant food ordering system. Mobile-optimized delivery platform with
+                                seamless ordering and payment integration.</p>
                         </div>
                     </div>
 
                     <!-- Project 8 - 1 photo -->
                     <div class="portfolio-card" data-project="8">
                         <div class="portfolio-card-image">
-                            <img src="/images/portfolio/08_infonetworks.png" alt="Toronto Korean realtor information sharing platform" loading="lazy">
+                            <img src="/images/portfolio/08_infonetworks.png"
+                                alt="Toronto Korean realtor information sharing platform" loading="lazy">
                         </div>
                         <div class="portfolio-card-info">
                             <h3>Toronto Korean Realtor Information Platform</h3>
-                            <p>Korean realtor dedicated information network. Real-time property listing sharing and collaboration system for improved workflow efficiency.</p>
+                            <p>Korean realtor dedicated information network. Real-time property listing sharing and
+                                collaboration system for improved workflow efficiency.</p>
                         </div>
                     </div>
 
                     <!-- Project 9 - 1 photo -->
                     <div class="portfolio-card" data-project="9">
                         <div class="portfolio-card-image">
-                            <img src="/images/portfolio/09_Goohagi_app.png" alt="Goohagi - Toronto Korean business connection service platform" loading="lazy">
+                            <img src="/images/portfolio/09_Goohagi_app.png"
+                                alt="Goohagi - Toronto Korean business connection service platform" loading="lazy">
                         </div>
                         <div class="portfolio-card-info">
                             <h3>Goohagi - Toronto Korean Business Connection Service</h3>
-                            <p>Toronto Korean business connection platform for insurance, real estate, and automotive services. Integrated matching service connecting customers with professionals.</p>
+                            <p>Toronto Korean business connection platform for insurance, real estate, and automotive
+                                services. Integrated matching service connecting customers with professionals.</p>
                         </div>
                     </div>
 
                     <!-- Project 10 - 2 photos -->
                     <div class="portfolio-card" data-project="10">
                         <div class="portfolio-card-image">
-                            <img src="/images/portfolio/10_01_fanbattle_main.png" alt="Fanbattle Canada ice hockey team building and betting system" loading="lazy">
+                            <img src="/images/portfolio/10_01_fanbattle_main.png"
+                                alt="Fanbattle Canada ice hockey team building and betting system" loading="lazy">
                             <div class="photo-count">2 photos</div>
                         </div>
                         <div class="portfolio-card-info">
                             <h3>Fanbattle Ice Hockey Betting System</h3>
-                            <p>Canada ice hockey team building and fantasy betting platform. Real-time team management and match prediction for maximized fan engagement.
+                            <p>Canada ice hockey team building and fantasy betting platform. Real-time team management
+                                and match prediction for maximized fan engagement.
                             </p>
                         </div>
                     </div>
@@ -824,22 +889,28 @@
                     <!-- Project 11 - 1 photo -->
                     <div class="portfolio-card" data-project="11">
                         <div class="portfolio-card-image">
-                            <img src="/images/portfolio/11_01_KSOX.png" alt="SOX internal control web system - enterprise compliance management" loading="lazy">
+                            <img src="/images/portfolio/11_01_KSOX.png"
+                                alt="SOX internal control web system - enterprise compliance management" loading="lazy">
                         </div>
                         <div class="portfolio-card-info">
                             <h3>SOX Internal Control Web System</h3>
-                            <p>Enterprise internal control and compliance management system. Risk monitoring and audit process automation for enhanced operational efficiency.</p>
+                            <p>Enterprise internal control and compliance management system. Risk monitoring and audit
+                                process automation for enhanced operational efficiency.</p>
                         </div>
                     </div>
 
                 </div>
 
-                <div style="margin-top:40px; padding:25px; background:linear-gradient(135deg, rgba(0,180,216,0.1), rgba(0,180,216,0.05)); border-radius:8px; border:1px solid rgba(0,180,216,0.3);">
+                <div
+                    style="margin-top:40px; padding:25px; background:linear-gradient(135deg, rgba(0,180,216,0.1), rgba(0,180,216,0.05)); border-radius:8px; border:1px solid rgba(0,180,216,0.3);">
                     <h4 style="color:#00b4d8; margin-top:0;">🚀 Want a custom solution for your business?</h4>
                     <p style="margin-bottom:15px;">
-                        Let's discuss how we can build something tailored to your needs. From SEO dashboards to custom web applications.
+                        Let's discuss how we can build something tailored to your needs. From SEO dashboards to custom
+                        web applications.
                     </p>
-                    <p><a href="#contact" style="display:inline-block; padding:12px 30px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:600; transition:background 0.3s;">Get in Touch →</a></p>
+                    <p><a href="#contact"
+                            style="display:inline-block; padding:12px 30px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:600; transition:background 0.3s;">Get
+                            in Touch →</a></p>
                 </div>
             </article>
 
@@ -866,22 +937,27 @@
 
                 <h3>1. Free Consultation (English / 한국어)</h3>
                 <p>
-                    We start with a <strong>15–30 minute call</strong> to understand your business, location, and goals. For Korean business owners, we can explain everything in <strong>Korean</strong> so you can make decisions comfortably.
+                    We start with a <strong>15–30 minute call</strong> to understand your business, location, and goals.
+                    For Korean business owners, we can explain everything in <strong>Korean</strong> so you can make
+                    decisions comfortably.
                 </p>
 
                 <h3>2. SEO Audit & Strategy</h3>
                 <p>
-                    We run a full <strong>SEO and Local SEO audit</strong> on your website and Google Business Profile, then create a simple action plan focused on:
+                    We run a full <strong>SEO and Local SEO audit</strong> on your website and Google Business Profile,
+                    then create a simple action plan focused on:
                 </p>
                 <ul>
-                    <li>Primary keywords: “Toronto SEO services”, “Local SEO Toronto”, and niche keywords in your industry</li>
+                    <li>Primary keywords: “Toronto SEO services”, “Local SEO Toronto”, and niche keywords in your
+                        industry</li>
                     <li>Website structure and content gaps</li>
                     <li>Local visibility and map pack opportunities</li>
                 </ul>
 
                 <h3>3. Implementation</h3>
                 <p>
-                    We take care of implementation: on-page SEO, technical fixes, Local SEO setup, and content creation. You can focus on running your business while we handle Google.
+                    We take care of implementation: on-page SEO, technical fixes, Local SEO setup, and content creation.
+                    You can focus on running your business while we handle Google.
                 </p>
 
                 <h3>4. Reporting & Optimization</h3>
@@ -896,15 +972,20 @@
                 </ul>
 
                 <p>
-                    Our goal is simple: help your <strong>Korean or local small business</strong> appear where your customers are searching and convert that visibility into real inquiries and sales.
+                    Our goal is simple: help your <strong>Korean or local small business</strong> appear where your
+                    customers are searching and convert that visibility into real inquiries and sales.
                 </p>
 
-                <div style="margin-top:40px; padding:25px; background:linear-gradient(135deg, rgba(0,180,216,0.1), rgba(0,180,216,0.05)); border-radius:8px; border:1px solid rgba(0,180,216,0.3);">
+                <div
+                    style="margin-top:40px; padding:25px; background:linear-gradient(135deg, rgba(0,180,216,0.1), rgba(0,180,216,0.05)); border-radius:8px; border:1px solid rgba(0,180,216,0.3);">
                     <h4 style="color:#00b4d8; margin-top:0;">🚀 Ready to rank higher in Toronto?</h4>
                     <p style="margin-bottom:15px;">
-                        Get a <strong>free SEO audit</strong> for your website or Google Business Profile and discover how we can help your Korean or local small business appear above competitors in Toronto and GTA.
+                        Get a <strong>free SEO audit</strong> for your website or Google Business Profile and discover
+                        how we can help your Korean or local small business appear above competitors in Toronto and GTA.
                     </p>
-                    <p><a href="#contact" style="display:inline-block; padding:12px 30px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:600; transition:background 0.3s;">Get Your Free SEO Audit →</a></p>
+                    <p><a href="#contact"
+                            style="display:inline-block; padding:12px 30px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:600; transition:background 0.3s;">Get
+                            Your Free SEO Audit →</a></p>
                 </div>
             </article>
 
@@ -912,13 +993,17 @@
             <article id="contact">
                 <h2 class="major">Contact Mosoft</h2>
                 <p>
-                    <strong>Ready to grow your Toronto business with AI-powered SEO and Local SEO?</strong><br /> Tell us about your business, and we’ll show you what is realistically possible in your area.
+                    <strong>Ready to grow your Toronto business with AI-powered SEO and Local SEO?</strong><br /> Tell
+                    us about your business, and we’ll show you what is realistically possible in your area.
                 </p>
 
                 <div style="margin:30px 0; padding:20px; background:rgba(255,255,255,0.03); border-radius:8px;">
                     <h3 style="margin-top:0;">📞 Get In Touch</h3>
-                    <p><strong>📧 Email:</strong> <a href="/cdn-cgi/l/email-protection#3a53545c557a575549555c4e14595b" style="color:#00b4d8;"><span class="__cf_email__" data-cfemail="c8a1a6aea788a5a7bba7aebce6aba9">[email&#160;protected]</span></a></p>
-                    <p><strong>☎️ Phone:</strong> <a href="tel:+14165672438" style="color:#00b4d8;">+1-416-567-2438</a></p>
+                    <p><strong>📧 Email:</strong> <a href="/cdn-cgi/l/email-protection#3a53545c557a575549555c4e14595b"
+                            style="color:#00b4d8;"><span class="__cf_email__"
+                                data-cfemail="c8a1a6aea788a5a7bba7aebce6aba9">[email&#160;protected]</span></a></p>
+                    <p><strong>☎️ Phone:</strong> <a href="tel:+14165672438" style="color:#00b4d8;">+1-416-567-2438</a>
+                    </p>
                     <p><strong>📍 Address:</strong> Unit 99, Richmond Hill, ON L4C 5W4</p>
                     <p><strong>🕒 Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM EST</p>
                     <p><strong>🌐 Languages:</strong> English / 한국어 (Korean)</p>
@@ -928,21 +1013,22 @@
                     <h3>🗺️ Service Areas</h3>
                     <p>We proudly serve businesses throughout the <strong>Greater Toronto Area</strong>:</p>
                     <ul>
-                        <li>Toronto (Downtown, Midtown, Uptown)</li>
-                        <li>Richmond Hill &amp; Thornhill</li>
-                        <li>Markham &amp; Unionville</li>
-                        <li>Vaughan &amp; Concord</li>
-                        <li>North York</li>
-                        <li>Scarborough</li>
-                        <li>Mississauga &amp; Brampton</li>
-                        <li>Etobicoke</li>
-                        <li>Ajax, Pickering, Whitby</li>
+                        <li><a href="./local-seo/toronto-seo.html">Toronto</a></li>
+                        <li><a href="./local-seo/richmond-hill-seo.html">Richmond Hill</a></li>
+                        <li><a href="./local-seo/markham-seo.html">Markham</a></li>
+                        <li><a href="./local-seo/vaughan-seo.html">Vaughan</a></li>
+                        <li><a href="./local-seo/north-york-seo.html">North York</a></li>
+                        <li><a href="./local-seo/scarborough-seo.html">Scarborough</a></li>
+                        <li><a href="./local-seo/mississauga-brampton-seo.html">Mississauga & Brampton</a></li>
                     </ul>
                 </div>
 
-                <div style="margin:30px 0; padding:20px; background:rgba(0,180,216,0.08); border-left:4px solid #00b4d8;">
+                <div
+                    style="margin:30px 0; padding:20px; background:rgba(0,180,216,0.08); border-left:4px solid #00b4d8;">
                     <p>
-                        <strong>💡 Free SEO Audit:</strong> Not sure if your website or Google Business Profile is set up correctly? Ask for a free audit and we’ll highlight the most important 3–5 fixes for your business.
+                        <strong>💡 Free SEO Audit:</strong> Not sure if your website or Google Business Profile is set
+                        up correctly? Ask for a free audit and we’ll highlight the most important 3–5 fixes for your
+                        business.
                     </p>
                 </div>
 
@@ -950,8 +1036,10 @@
                     <h3>🌐 Connect With Us</h3>
                     <p>Follow us for SEO tips, digital marketing insights, and Toronto small business news:</p>
                     <p>
-                        <a href="https://www.facebook.com/mosoft.ca" target="_blank" rel="noopener noreferrer" style="margin-right:15px; color:#00b4d8;">Facebook</a> |
-                        <a href="https://www.instagram.com/mosoft.ca" target="_blank" rel="noopener noreferrer" style="color:#00b4d8;">Instagram</a>
+                        <a href="https://www.facebook.com/mosoft.ca" target="_blank" rel="noopener noreferrer"
+                            style="margin-right:15px; color:#00b4d8;">Facebook</a> |
+                        <a href="https://www.instagram.com/mosoft.ca" target="_blank" rel="noopener noreferrer"
+                            style="color:#00b4d8;">Instagram</a>
                     </p>
                 </div>
             </article>
@@ -960,7 +1048,8 @@
         <footer id="footer">
             <div style="margin-bottom:20px;">
                 <p><strong>Mosoft</strong> – Toronto SEO & Local SEO Agency for Korean & Local Small Businesses</p>
-                <p>Unit 99, Richmond Hill, ON L4C 5W4 | <a href="tel:+14165672438">+1-416-567-2438</a> | <a href="/cdn-cgi/l/email-protection#1d74737b725d70726e727b69337e7c"><span class="__cf_email__" data-cfemail="442d2a222b04292b372b22306a2725">[email&#160;protected]</span></a></p>
+                <p>Unit 99, Richmond Hill, ON L4C 5W4 | <a href="tel:+14165672438">+1-416-567-2438</a> | <a
+                        href="mailto:info@mosoft.ca">info@mosoft.ca</a></p>
             </div>
 
             <nav style="margin:20px 0;">
@@ -972,13 +1061,8 @@
                 <a href="./privacy-policy.html" style="margin:0 10px; color:#aaa;">Privacy Policy</a>
             </nav>
 
-            <div style="margin-top:15px; padding-top:15px; border-top:1px solid rgba(255,255,255,0.1);">
-                <p style="font-size:0.9em; color:#888;">
-                    <strong>Keywords:</strong> Toronto SEO Services | Local SEO Toronto | SEO Agency GTA | Korean Business Marketing Toronto | Web Design Richmond Hill
-                </p>
-            </div>
-
-            <p class="copyright" style="margin-top:20px;">&copy; 2025 Mosoft. All Rights Reserved. | Design: <a href="https://html5up.net">HTML5 UP</a></p>
+            <p class="copyright" style="margin-top:20px;">&copy; <span id="year">2025</span> Mosoft. All Rights
+                Reserved. | Design: <a href="https://html5up.net">HTML5 UP</a></p>
         </footer>
     </div>
 
@@ -992,6 +1076,13 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/portfolio-grid.js"></script>
 
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Remove preload class immediately
+        document.body.classList.remove('is-preload');
+    </script>
 </body>
 
 </html>
