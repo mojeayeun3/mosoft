@@ -11,6 +11,7 @@ Allow: /
 # ============================================================
 # BLOCKED AREAS (only if they actually exist)
 # ============================================================
+Disallow: /seo-analizer/     # Block the SEO analyzer directory
 # Disallow: /admin/          # Uncomment if admin area exists
 # Disallow: /private/        # Uncomment if private area exists
 # Disallow: /*.json          # Uncomment if you want to block JSON files
