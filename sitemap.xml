@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<!-- ============================================================
+     MOSOFT.CA SITEMAP - Optimized for SEO
+     Last Updated: 2025-11-29
+     Safe lastmod: Using 2025-11-28 (yesterday) to avoid future date issues
+     ============================================================ -->
+
+<!-- ============================================================
+     TIER 1: Homepage (Priority: 1.00)
+     ============================================================ -->
+<url>
+  <loc>https://www.mosoft.ca/</loc>
+  <lastmod>2025-11-28</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+
+<!-- ============================================================
+     TIER 2: Korean Homepage & Key Landing Pages (Priority: 0.90)
+     ============================================================ -->
+<url>
+  <loc>https://www.mosoft.ca/ko/index.html</loc>
+  <lastmod>2025-11-28</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
+</url>
+
+<url>
+  <loc>https://www.mosoft.ca/local-seo/toronto-seo.html</loc>
+  <lastmod>2025-11-28</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+
+<url>
+  <loc>https://www.mosoft.ca/local-seo/north-york-seo.html</loc>
+  <lastmod>2025-11-28</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+
+<!-- ============================================================
+     TIER 3: Regional SEO Pages (Priority: 0.85)
+     ============================================================ -->
+<url>
+  <loc>https://www.mosoft.ca/local-seo/richmond-hill-seo.html</loc>
+  <lastmod>2025-11-28</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.85</priority>
+</url>
+
+<url>
+  <loc>https://www.mosoft.ca/local-seo/markham-seo.html</loc>
+  <lastmod>2025-11-28</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.85</priority>
+</url>
+
+<url>
+  <loc>https://www.mosoft.ca/local-seo/vaughan-seo.html</loc>
+  <lastmod>2025-11-28</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.85</priority>
+</url>
+
+<url>
+  <loc>https://www.mosoft.ca/local-seo/scarborough-seo.html</loc>
+  <lastmod>2025-11-28</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.85</priority>
+</url>
+
+<url>
+  <loc>https://www.mosoft.ca/local-seo/mississauga-brampton-seo.html</loc>
+  <lastmod>2025-11-28</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.85</priority>
+</url>
+
+<!-- ============================================================
+     TIER 4: Korean Regional SEO Pages (Priority: 0.80)
+     ============================================================ -->
+<url>
+  <loc>https://www.mosoft.ca/ko/local-seo/toronto-seo-ko.html</loc>
+  <lastmod>2025-11-28</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.mosoft.ca/ko/local-seo/north-york-seo-ko.html</loc>
+  <lastmod>2025-11-28</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.mosoft.ca/ko/local-seo/richmond-hill-seo-ko.html</loc>
+  <lastmod>2025-11-28</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.mosoft.ca/ko/local-seo/markham-seo-ko.html</loc>
+  <lastmod>2025-11-28</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.mosoft.ca/ko/local-seo/vaughan-seo-ko.html</loc>
+  <lastmod>2025-11-28</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.mosoft.ca/ko/local-seo/scarborough-seo-ko.html</loc>
+  <lastmod>2025-11-28</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.mosoft.ca/ko/local-seo/mississauga-brampton-seo-ko.html</loc>
+  <lastmod>2025-11-28</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<!-- ============================================================
+     TIER 5: Legal Pages (Priority: 0.30)
+     ============================================================ -->
+<url>
+  <loc>https://www.mosoft.ca/privacy-policy.html</loc>
+  <lastmod>2025-11-28</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.30</priority>
+</url>
+
+<url>
+  <loc>https://www.mosoft.ca/ko/privacy-policy-ko.html</loc>
+  <lastmod>2025-11-28</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.30</priority>
+</url>
+
+</urlset>

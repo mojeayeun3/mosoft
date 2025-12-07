@@ -1,0 +1,900 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script>
+        // Google Analytics를 페이지 로드 후에 지연 로드
+        function loadAnalytics() {
+            var s = document.createElement('script');
+            s.src = "https://www.googletagmanager.com/gtag/js?id=G-6BFP8T7FTM";
+            s.async = true;
+            document.head.appendChild(s);
+
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-6BFP8T7FTM');
+        }
+
+        // 페이지 로드가 끝난 후 3~4초 뒤에 불러오기 (값은 취향대로)
+        window.addEventListener('load', function () {
+            setTimeout(loadAnalytics, 4000);
+        });
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <!-- Canonical & Hreflang -->
+    <link rel="canonical" href="https://www.mosoft.ca/ko/">
+    <link rel="alternate" hreflang="en" href="https://www.mosoft.ca/" />
+    <link rel="alternate" hreflang="ko" href="https://www.mosoft.ca/ko/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.mosoft.ca/" />
+
+    <!-- Title & Description -->
+    <title>토론토 SEO 서비스 | 한인 비즈니스 로컬 SEO · 웹사이트 제작 – Mosoft</title>
+    <meta name="description"
+        content="토론토 SEO services 및 로컬 SEO 전문. GTA 한인 비즈니스를 위한 AI 기반 SEO, 구글 비즈니스 프로필 최적화, SEO 특화 웹사이트 제작. 무료 SEO 진단 제공." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.mosoft.ca/ko/" />
+    <meta property="og:site_name" content="Mosoft - 토론토 SEO 에이전시" />
+    <meta property="og:title" content="토론토 SEO 서비스 | 한인 비즈니스 로컬 SEO – Mosoft" />
+    <meta property="og:description"
+        content="Toronto SEO services 및 로컬 SEO, 한인 비즈니스 특화 디지털 마케팅. 구글 비즈니스, 웹사이트 제작까지 한 번에." />
+    <meta property="og:image" content="https://www.mosoft.ca/images/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Mosoft - 토론토 SEO 및 로컬 SEO 전문 에이전시" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@mosoft_ca" />
+    <meta name="twitter:title" content="토론토 SEO 서비스 | 로컬 SEO GTA - Mosoft" />
+    <meta name="twitter:description" content="토론토 한인 비즈니스를 위한 SEO services Toronto, 로컬 SEO, 웹사이트 제작 전문." />
+    <meta name="twitter:image" content="https://www.mosoft.ca/images/og-image.jpg" />
+
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="apple-touch-icon" href="../images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Korean Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Minimal Critical CSS: CLS Prevention Only -->
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        li,
+        a {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            word-break: keep-all;
+            line-height: 1.8;
+        }
+
+        #header {
+            min-height: 500px !important;
+        }
+
+        #main {
+            min-height: 400px !important;
+        }
+
+        #footer {
+            min-height: 350px !important;
+        }
+
+        body.is-preload #header {
+            filter: none !important;
+            opacity: 1 !important;
+        }
+
+        body.is-preload #header>* {
+            opacity: 1 !important;
+        }
+
+        body.is-preload #header .content .inner {
+            max-height: none !important;
+            opacity: 1 !important;
+        }
+
+        /* Language Switcher Style */
+
+        .language-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 10000;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 8px 15px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .language-switcher a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.9em;
+            padding: 5px 10px;
+            transition: color 0.3s;
+        }
+
+        .language-switcher a:hover {
+            color: #00b4d8;
+        }
+
+        .language-switcher .active {
+            color: #00b4d8;
+            font-weight: 700;
+        }
+
+        .language-switcher .separator {
+            color: rgba(255, 255, 255, 0.5);
+            margin: 0 5px;
+        }
+
+        /* Hero 아래 하이라이트 영역 (영문과 동일 구조) */
+
+        .home-highlights {
+            max-width: 960px;
+            margin: 2.5rem auto 1.5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .home-highlights .badges {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .home-highlights .badge {
+            background: rgba(0, 0, 0, 0.35);
+            border-radius: 10px;
+            padding: 1rem 1.25rem;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .home-highlights .badge h3 {
+            margin: 0 0 0.4rem 0;
+            font-size: 1.02rem;
+        }
+
+        .home-highlights .badge p {
+            margin: 0;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .home-highlights .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .home-highlights .service-card {
+            display: block;
+            text-decoration: none;
+            padding: 1rem 1.2rem;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+        }
+
+        .home-highlights .service-card h4 {
+            margin: 0 0 0.4rem 0;
+            font-size: 0.98rem;
+            font-weight: 600;
+        }
+
+        .home-highlights .service-card p {
+            margin: 0;
+            font-size: 0.88rem;
+            opacity: 0.9;
+        }
+
+        .home-highlights .service-card:hover {
+            transform: translateY(-3px);
+            background: rgba(0, 180, 216, 0.10);
+            border-color: rgba(0, 180, 216, 0.6);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+        }
+
+        @media screen and (max-width: 425px) {
+            h2.major {
+                font-size: 1.0em !important;
+                letter-spacing: 0.1em !important;
+                white-space: normal !important;
+                word-break: break-word !important;
+                overflow-wrap: break-word !important;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .language-switcher {
+                right: auto !important;
+                left: 15px !important;
+                top: 15px !important;
+            }
+        }
+    </style>
+
+    <!-- Load CSS async -->
+    <link rel="preload" href="../assets/css/main.css?v=20251108_6.1" as="style">
+    <link rel="stylesheet" href="../assets/css/main.css?v=20251118_1.0" />
+    <noscript>
+        <link rel="stylesheet" href="../assets/css/noscript.css" />
+    </noscript>
+
+    <!-- JSON-LD: Organization Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Mosoft",
+            "alternateName": "Mosoft 디지털 마케팅",
+            "url": "https://mosoft.ca/ko/",
+            "logo": "https://mosoft.ca/images/logo.png",
+            "image": "https://mosoft.ca/images/og-image.jpg",
+            "description": "토론토 및 GTA 한인 비즈니스를 위한 AI 기반 디지털 마케팅 및 Toronto SEO services · 로컬 SEO 전문 에이전시.",
+            "founder": {
+                "@type": "Person",
+                "name": "Mosoft Team"
+            },
+            "foundingDate": "2020",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-416-567-2438",
+                "contactType": "customer service",
+                "email": "info@mosoft.ca",
+                "areaServed": ["CA-ON"],
+                "availableLanguage": ["Korean", "English"]
+            },
+            "sameAs": [
+                "https://www.facebook.com/mosoft.ca",
+                "https://www.instagram.com/mosoft.ca"
+            ]
+        }
+    </script>
+
+    <!-- JSON-LD: LocalBusiness Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "@id": "https://mosoft.ca/ko/#business",
+            "name": "Mosoft - 토론토 SEO & 로컬 SEO 에이전시",
+            "image": [
+                "https://mosoft.ca/images/logo.png",
+                "https://mosoft.ca/images/og-image.jpg"
+            ],
+            "url": "https://mosoft.ca/ko/",
+            "telephone": "+1-416-567-2438",
+            "email": "info@mosoft.ca",
+            "priceRange": "$$",
+            "description": "Toronto SEO services, Local SEO Toronto, 한인 비즈니스 특화 웹사이트 제작 및 디지털 마케팅 서비스.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Unit 99",
+                "addressLocality": "Richmond Hill",
+                "addressRegion": "ON",
+                "postalCode": "L4C 5W4",
+                "addressCountry": "CA"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "43.8828",
+                "longitude": "-79.4403"
+            },
+            "areaServed": [{
+                "@type": "City",
+                "name": "Toronto"
+            }, {
+                "@type": "City",
+                "name": "Richmond Hill"
+            }, {
+                "@type": "City",
+                "name": "Markham"
+            }, {
+                "@type": "City",
+                "name": "Vaughan"
+            }, {
+                "@type": "City",
+                "name": "North York"
+            }],
+            "openingHoursSpecification": [{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "18:00"
+            }],
+            "paymentAccepted": "Cash, Credit Card, Debit Card, Bank Transfer",
+            "currenciesAccepted": "CAD"
+        }
+    </script>
+
+    <!-- JSON-LD: FAQ Schema (Korean) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+                "@type": "Question",
+                "name": "Mosoft는 토론토와 GTA 지역 로컬 SEO 서비스를 제공하나요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "네. Mosoft는 Toronto SEO services 및 로컬 SEO를 전문으로 하며, 구글 비즈니스 프로필 최적화, 지역 키워드 전략, 지도 노출(맵팩) 최적화, 리뷰 관리 등을 통해 토론토 및 GTA 한인 비즈니스의 온라인 노출을 높여드립니다."
+                }
+            }, {
+                "@type": "Question",
+                "name": "한인 비즈니스도 영어 검색 키워드로 작업해 주나요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "물론입니다. 한인 사업체의 주요 고객이 영어로 검색하는 경우가 많기 때문에, 'Toronto SEO services', 'Local SEO Toronto'와 같은 영어 키워드와 한국어 키워드를 함께 반영하여 최적화 전략을 설계합니다."
+                }
+            }, {
+                "@type": "Question",
+                "name": "SEO 효과는 보통 얼마나 걸리나요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "업종과 경쟁 상황에 따라 다르지만, 로컬 SEO 기준으로는 보통 3~6개월 사이에 구글 지도 및 검색 결과에서 눈에 띄는 변화가 나타납니다. 경쟁이 심한 키워드는 6~12개월 정도를 예상하시면 좋습니다."
+                }
+            }, {
+                "@type": "Question",
+                "name": "한국어로 상담이 가능한가요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "네. 한국어와 영어 모두 가능하며, 한인 비즈니스 사장님들이 이해하기 쉽게 숫자와 예시 중심으로 설명드립니다."
+                }
+            }]
+        }
+    </script>
+</head>
+
+<body class="is-preload">
+
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <a href="../index.html">English</a>
+        <span class="separator">|</span>
+        <a href="#" class="active">한국어</a>
+    </div>
+
+    <div id="wrapper">
+        <header id="header">
+            <div class="logo"
+                style="width:80px; height:80px; border-radius:50%; background:#000; border:2px solid #fff; display:flex; align-items:center; justify-content:center;">
+                <img src="../images/logo.png" alt="Mosoft - 토론토 SEO 에이전시 로고" width="44" height="44" loading="eager"
+                    style="width:44px; height:44px; object-fit:contain; display:block; image-rendering:-webkit-optimize-contrast; image-rendering:crisp-edges; position:relative; left:5%;">
+            </div>
+            <div class="content">
+                <div class="inner">
+                    <h1>토론토 SEO 서비스 & 한인 비즈니스 로컬 SEO 에이전시</h1>
+                    <p>
+                        <strong>Toronto SEO services</strong>와 <strong>로컬 SEO</strong>에 특화된 한인 디지털 마케팅 파트너.<br /> GTA 한인
+                        비즈니스의 구글 노출, 전화 문의, 방문 고객을 실제로 늘려드립니다.
+                    </p>
+                </div>
+            </div>
+            <!-- 히어로 아래 강점 + 서비스 하이라이트 (영문과 동일 구조, 한글 텍스트) -->
+            <section class="home-highlights" aria-label="핵심 강점 및 주요 SEO 서비스">
+                <!-- TRUST / 강점 배지 3개 -->
+                <div class="badges">
+                    <div class="badge">
+                        <h3>Toronto SEO 전문</h3>
+                        <p>토론토 및 GTA 지역 스몰 비즈니스를 위한 Local SEO &amp; Google Business Profile 최적화.</p>
+                    </div>
+                    <div class="badge">
+                        <h3>한인 비즈니스 특화</h3>
+                        <p>한인 식당, 학원, 부동산 등 한국인 사장님들을 위한 맞춤 전략과 한국어 상담 지원.</p>
+                    </div>
+                </div>
+
+                <!-- 서비스 하이라이트 4개 (아이콘 느낌 카드) -->
+                <div class="services-grid">
+                    <a href="#services" class="service-card">
+                        <h4>SEO Services Toronto</h4>
+                        <p>한인 및 로컬 스몰 비즈니스를 위한 온페이지·오프페이지 SEO 전략.</p>
+                    </a>
+                    <a href="#services" class="service-card">
+                        <h4>Local SEO &amp; 지도 노출</h4>
+                        <p>Google Maps(맵팩) 상위 노출, 지역 키워드, 로컬 디렉토리 최적화.</p>
+                    </a>
+                    <a href="#services" class="service-card">
+                        <h4>구글 비즈니스 프로필</h4>
+                        <p>프로필 생성, 정보 최적화, 리뷰 관리, 사진 및 포스트 업데이트.</p>
+                    </a>
+                    <a href="#services" class="service-card">
+                        <h4>SEO 특화 웹사이트 제작</h4>
+                        <p>빠르고 모바일 친화적인 SEO 최적화 웹사이트를 처음부터 설계합니다.</p>
+                    </a>
+                </div>
+            </section>
+        </header>
+
+        <div id="main">
+            <!-- 회사 소개 -->
+            <article id="intro">
+                <h2 class="major">토론토 한인 비즈니스 SEO 전문</h2>
+                <p><strong>Mosoft</strong>는 토론토·GTA 지역 <strong>한인 비즈니스</strong>를 위한
+                    <strong>SEO services Toronto</strong>와 <strong>로컬 SEO</strong>, 웹사이트 제작에 특화된 디지털 마케팅 에이전시입니다.
+                </p>
+
+                <p>
+                    “홈페이지는 있는데, 구글에서 검색해도 안 나와요”<br /> “우리 가게 이름을 검색해야 겨우 뜹니다”<br /> 대부분의 한인 업소 사장님들이 겪는 공통적인 고민입니다.
+                </p>
+
+                <p>
+                    우리는 단순히 방문자 수만 늘리는 것이 아니라,
+                    <strong>전화·예약·문의·방문으로 이어지는 실질적인 결과</strong>를 목표로 합니다. Toronto SEO agency의 관점과 한인 커뮤니티 감각을 동시에 반영한
+                    전략을 사용합니다.
+                </p>
+
+                <div
+                    style="margin:30px 0; padding:25px; background:linear-gradient(135deg, rgba(0,180,216,0.15), rgba(0,180,216,0.05)); border-radius:10px; border-left:4px solid #00b4d8;">
+                    <h3 style="margin-top:0; color:#00b4d8;">🎯 왜 Mosoft인가?</h3>
+                    <ul style="margin-bottom:0;">
+                        <li><strong>한인 비즈니스 특화:</strong> 식당, 학원, 부동산, 마트, 미용실 등 업종별 맞춤 전략</li>
+                        <li><strong>영어 검색 + 한글 콘텐츠:</strong> 영어 키워드(Local SEO Toronto)와 한글 설명을 동시에 최적화</li>
+                        <li><strong>AI 기반 분석:</strong> 경쟁사, 키워드, 트렌드를 인공지능으로 자동 분석</li>
+                        <li><strong>투명한 리포트:</strong> “몇 위 올랐는지, 전화가 얼마나 늘었는지” 숫자로 보여줌</li>
+                        <li><strong>한국어 상담:</strong> 어렵고 복잡한 마케팅 용어 대신, 이해하기 쉬운 설명</li>
+                    </ul>
+                </div>
+
+                <h3>💼 이런 업종이라면 특히 효과가 큽니다</h3>
+                <ul>
+                    <li>🍜 <strong>식당·카페</strong> – “리치먼드힐 한식당”, “토론토 카페 near me” 검색 노출</li>
+                    <li>🏢 <strong>부동산·모기지</strong> – “토론토 한인 부동산”, “GTA 콘도 매매” 키워드 공략</li>
+                    <li>📚 <strong>학원·교육</strong> – “마컴 학원”, “영어학원 North York” 등 지역+서비스 조합</li>
+                    <li>🛒 <strong>마트·소매업</strong> – “한인 마트 토론토”, “Korean grocery Toronto” 검색 대응</li>
+                    <li>💆 <strong>미용·헬스</strong> – “토론토 헤어샵”, “스킨케어 North York” 등 니즈 키워드</li>
+                    <li>🚗 <strong>자동차·정비</strong> – “토론토 자동차 정비”, “오일체인지 near me” 노출 강화</li>
+                </ul>
+
+                <div style="margin-top:30px; padding:20px; background:rgba(255,255,255,0.04); border-radius:8px;">
+                    <p><strong>📍 서비스 지역:</strong> <a href="./local-seo/toronto-seo-ko.html">Toronto</a> | <a
+                            href="./local-seo/richmond-hill-seo-ko.html">Richmond Hill</a> | <a
+                            href="./local-seo/markham-seo-ko.html">Markham</a> | <a href="./local-seo/vaughan-seo-ko.html">Vaughan</a>
+                        | <a href="./local-seo/north-york-seo-ko.html">North York</a> | <a
+                            href="./local-seo/scarborough-seo-ko.html">Scarborough</a> | <a
+                            href="./local-seo/mississauga-brampton-seo-ko.html">Mississauga & Brampton</a> 등 GTA 전역</p>
+                </div>
+
+                <div style="margin-top:40px; text-align:center;">
+                    <a href="#contact"
+                        style="display:inline-block; padding:14px 38px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:700; font-size:1.05em;">
+                        무료 SEO 진단 받기 →
+                    </a>
+                </div>
+            </article>
+
+            <!-- 서비스 -->
+            <article id="services">
+                <h2 class="major">서비스 소개</h2>
+
+                <p style="font-size:1.05em;">
+                    Mosoft는 <strong>Toronto SEO services</strong>, <strong>Local SEO Toronto</strong>,
+                    <strong>구글 비즈니스 프로필 최적화</strong>, <strong>SEO 특화 웹사이트 제작</strong>을 한 번에 제공합니다.
+                </p>
+
+                <h3>🎯 로컬 SEO (Local SEO Toronto)</h3>
+                <p><strong>“우리 동네 + 업종명”으로 검색했을 때 상단에 나오는 것이 목표입니다.</strong></p>
+                <ul>
+                    <li>지역 키워드 분석 (예: “North York Korean restaurant”, “Richmond Hill dentist”)</li>
+                    <li>지도(맵팩) 상위 노출 전략 수립</li>
+                    <li>지역 디렉토리(옐프, 옐로페이지 등) 등록 및 NAP 일관성 유지</li>
+                    <li>지역·언어(영어/한글) 혼합 키워드 구조 설계</li>
+                    <li>지역별 랜딩 페이지 제작 (예: North York, Markham, Vaughan 등)</li>
+                </ul>
+
+                <h3>📍 구글 비즈니스 프로필 최적화</h3>
+                <p><strong>구글 지도에서 잘 보이는 것이 곧 매출과 직결됩니다.</strong></p>
+                <ul>
+                    <li>구글 비즈니스 프로필 생성/이전/소유권 정리</li>
+                    <li>영업 정보, 서비스, 메뉴, 가격 등 상세 정보 최적화</li>
+                    <li>고해상도 사진(외관, 내부, 메뉴, 스탭) 업로드</li>
+                    <li>리뷰 요청 메시지 템플릿 제공 및 리뷰 관리</li>
+                    <li>정기 포스트 게시(이벤트, 새 메뉴, 공지 등)</li>
+                </ul>
+
+                <h3>🤖 AI 기반 SEO 최적화</h3>
+                <p><strong>사람이 일일이 찾기 어려운 기회를 AI가 대신 찾아줍니다.</strong></p>
+                <ul>
+                    <li>AI를 활용한 키워드 리서치 (영어+한글 패턴 분석)</li>
+                    <li>경쟁사(한국/현지) SEO 전략 자동 분석</li>
+                    <li>콘텐츠 최적화 추천 (제목, 소제목, 본문 구조)</li>
+                    <li>검색 트렌드 모니터링 (계절·이슈에 따른 키워드 변화)</li>
+                </ul>
+
+                <h3>🔧 기술적 SEO & 속도 최적화</h3>
+                <p><strong>느린 사이트는 구글도, 고객도 싫어합니다.</strong></p>
+                <ul>
+                    <li>Core Web Vitals 개선 (속도·반응성·레이아웃 안정성)</li>
+                    <li>이미지 WebP 변환 및 용량 최적화</li>
+                    <li>불필요 스크립트 최소화 및 캐싱 전략 적용</li>
+                    <li>모바일 최적화 및 반응형 점검</li>
+                    <li>사이트맵·robots.txt 정리 및 크롤링 오류 해결</li>
+                </ul>
+
+                <h3>🎨 SEO 특화 웹사이트 제작</h3>
+                <p><strong>보기 좋고, 빠르고, 검색에 잘 걸리는 구조로 처음부터 설계합니다.</strong></p>
+                <ul>
+                    <li>한글/영문 이중 언어 구조 설계</li>
+                    <li>카테고리·서비스·블로그 구조를 SEO 기준으로 설계</li>
+                    <li>WordPress, 정적 사이트, Shopify 등 상황에 맞는 플랫폼 선택</li>
+                    <li>클릭 유도 버튼(전화, 카카오/이메일 문의) 최적 배치</li>
+                    <li>접근성·반응형·속도까지 고려한 UI/UX 디자인</li>
+                </ul>
+
+                <div
+                    style="margin-top:40px; padding:25px; background:linear-gradient(135deg, rgba(0,180,216,0.1), rgba(0,180,216,0.05)); border-radius:10px; border:1px solid rgba(0,180,216,0.3); text-align:center;">
+                    <h4 style="color:#00b4d8; margin-top:0; font-size:1.2em;">🚀 우리 업소도 검색 상단에 올릴 수 있을까요?</h4>
+                    <p style="margin-bottom:18px;">무료 진단을 통해 <strong>현재 순위, 경쟁 상황, 3~6개월 예상 목표</strong>를 구체적으로 보여드립니다.
+                    </p>
+                    <a href="#contact"
+                        style="display:inline-block; padding:14px 34px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:700;">
+                        무료 SEO 진단 신청 →
+                    </a>
+                </div>
+            </article>
+
+            <!-- 포트폴리오 -->
+            <article id="portfolio">
+                <h2 class="major">포트폴리오</h2>
+                <p>고객을 위해 제작한 최근 프로젝트 및 맞춤 솔루션입니다.</p>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid">
+
+                    <!-- 프로젝트 1 - 사진 7개 -->
+                    <div class="portfolio-card" data-project="1">
+                        <div class="portfolio-card-image">
+                            <img src="/images/portfolio/01_01_Coway_main_top_page.png"
+                                alt="[진행중]코웨이 캐나다 반응형 웹사이트 리뉴얼 - SEO 최적화 홈페이지" loading="lazy">
+                            <div class="photo-count">7개 사진</div>
+                        </div>
+                        <div class="portfolio-card-info">
+                            <h3>코웨이 캐나다 홈페이지 리뉴얼</h3>
+                            <p>SEO 기능 통합 및 반응형 웹으로 전면 재구축. 모바일 최적화와 검색엔진 가시성 향상으로 온라인 고객 유입 증대.</p>
+                        </div>
+                    </div>
+
+                    <!-- 프로젝트 2 - 사진 4개 -->
+                    <div class="portfolio-card" data-project="2">
+                        <div class="portfolio-card-image">
+                            <img src="/images/portfolio/02_01_David_Reno_Spped_check.png"
+                                alt="[진행중]David Renovation 웹사이트 - SEO 최적화 및 속도 개선" loading="lazy">
+                            <div class="photo-count">4개 사진</div>
+                        </div>
+                        <div class="portfolio-card-info">
+                            <h3>David Renovation 웹사이트 최적화</h3>
+                            <p>SEO 기능 추가 및 로딩 속도 개선. 구글 검색 순위 향상과 페이지 성능 최적화로 전환율 증대.</p>
+                        </div>
+                    </div>
+
+                    <!-- 프로젝트 3 - 사진 1개 -->
+                    <div class="portfolio-card" data-project="3">
+                        <div class="portfolio-card-image">
+                            <img src="/images/portfolio/03_mosoft_bitcoin_treading_system.png"
+                                alt="AI 기반 비트코인 자동매매 시스템 대시보드" loading="lazy">
+                        </div>
+                        <div class="portfolio-card-info">
+                            <h3>AI 비트코인 자동매매 시스템</h3>
+                            <p>AI 기반 암호화폐 자동 트레이딩 플랫폼. 실시간 시장 분석과 자동 매매 실행으로 투자 효율성 극대화.</p>
+                        </div>
+                    </div>
+
+                    <!-- 프로젝트 4 - 사진 1개 -->
+                    <div class="portfolio-card" data-project="4">
+                        <div class="portfolio-card-image">
+                            <img src="/images/portfolio/04_uphereworship_church_homepage.png"
+                                alt="위로교회 반응형 웹사이트 - 심플한 교회 홈페이지 디자인" loading="lazy">
+                        </div>
+                        <div class="portfolio-card-info">
+                            <h3>위로교회 반응형 웹사이트</h3>
+                            <p>심플하고 직관적인 교회 홈페이지 디자인. 모바일 최적화로 모든 기기에서 편리한 예배 정보 접근.</p>
+                        </div>
+                    </div>
+
+                    <!-- 프로젝트 5 - 사진 3개 -->
+                    <div class="portfolio-card" data-project="5">
+                        <div class="portfolio-card-image">
+                            <img src="/images/portfolio/05_01_LemonTree_S_S_homepage.png"
+                                alt="LemonTree 한인 스시 레스토랑 웹사이트 - 심플한 메뉴 디자인" loading="lazy">
+                            <div class="photo-count">2개 사진</div>
+                        </div>
+                        <div class="portfolio-card-info">
+                            <h3>LemonTree 스시 레스토랑 웹사이트</h3>
+                            <p>토론토 한인 스시 & 샐러드 전문점 홈페이지. 심플한 메뉴 디자인과 온라인 주문 시스템으로 고객 편의성 향상.</p>
+                        </div>
+                    </div>
+
+                    <!-- 프로젝트 6 - 사진 2개 -->
+                    <div class="portfolio-card" data-project="6">
+                        <div class="portfolio-card-image">
+                            <img src="/images/portfolio/06_01_Gorudoya_menu.png"
+                                alt="Gorudoya 한인 스시 레스토랑 웹사이트 - 미니멀 디자인" loading="lazy">
+                            <div class="photo-count">2개 사진</div>
+                        </div>
+                        <div class="portfolio-card-info">
+                            <h3>Gorudoya 스시 레스토랑 웹사이트</h3>
+                            <p>토론토 한인 스시 전문점 홈페이지. 미니멀 디자인과 모바일 친화적 인터페이스로 온라인 예약 편의성 제공.</p>
+                        </div>
+                    </div>
+
+                    <!-- 프로젝트 7 - 사진 1개 -->
+                    <div class="portfolio-card" data-project="7">
+                        <div class="portfolio-card-image">
+                            <img src="/images/portfolio/07_Korea_order_system.png" alt="한인 음식 배달 주문 시스템 - 모바일 최적화 플랫폼"
+                                loading="lazy">
+                        </div>
+                        <div class="portfolio-card-info">
+                            <h3>한인 음식 배달 주문 플랫폼</h3>
+                            <p>토론토 한인 식당 전용 음식 주문 시스템. 모바일 최적화된 배달 플랫폼으로 간편한 주문 및 결제 지원.</p>
+                        </div>
+                    </div>
+
+                    <!-- 프로젝트 8 - 사진 1개 -->
+                    <div class="portfolio-card" data-project="8">
+                        <div class="portfolio-card-image">
+                            <img src="/images/portfolio/08_infonetworks.png" alt="토론토 한인 부동산 중개인 정보 공유 플랫폼"
+                                loading="lazy">
+                        </div>
+                        <div class="portfolio-card-info">
+                            <h3>토론토 한인 부동산 정보 공유 플랫폼</h3>
+                            <p>한인 부동산 중개인 전용 정보 네트워크. 실시간 매물 정보 공유와 협업 시스템으로 업무 효율성 향상.</p>
+                        </div>
+                    </div>
+
+                    <!-- 프로젝트 9 - 사진 1개 -->
+                    <div class="portfolio-card" data-project="9">
+                        <div class="portfolio-card-image">
+                            <img src="/images/portfolio/09_Goohagi_app.png" alt="구하기 - 토론토 한인 비즈니스 연결 서비스 플랫폼"
+                                loading="lazy">
+                        </div>
+                        <div class="portfolio-card-info">
+                            <h3>구하기 - 토론토 한인 비즈니스 연결 서비스</h3>
+                            <p>토론토 지역 한인 업소(보험, 부동산, 자동차 등) 연결 플랫폼. 고객과 전문가를 매칭하는 통합 서비스.</p>
+                        </div>
+                    </div>
+
+                    <!-- 프로젝트 10 - 사진 2개 -->
+                    <div class="portfolio-card" data-project="10">
+                        <div class="portfolio-card-image">
+                            <img src="/images/portfolio/10_01_fanbattle_main.png"
+                                alt="Fanbattle 캐나다 아이스하키 팀 구성 및 베팅 시스템" loading="lazy">
+                            <div class="photo-count">2개 사진</div>
+                        </div>
+                        <div class="portfolio-card-info">
+                            <h3>Fanbattle 아이스하키 베팅 시스템</h3>
+                            <p>캐나다 아이스하키 팀 구성 및 판타지 베팅 플랫폼. 실시간 팀 관리와 경기 예측으로 팬 참여도 극대화.</p>
+                        </div>
+                    </div>
+
+                    <!-- 프로젝트 11 - 사진 1개 -->
+                    <div class="portfolio-card" data-project="11">
+                        <div class="portfolio-card-image">
+                            <img src="/images/portfolio/11_01_KSOX.png" alt="SOX 내부통제 웹 시스템 - 기업 컴플라이언스 관리"
+                                loading="lazy">
+                        </div>
+                        <div class="portfolio-card-info">
+                            <h3>SOX 내부통제 웹 시스템</h3>
+                            <p>기업 내부통제 및 컴플라이언스 관리 시스템. 리스크 모니터링과 감사 프로세스 자동화로 업무 효율성 향상.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div
+                    style="margin-top:40px; padding:25px; background:linear-gradient(135deg, rgba(0,180,216,0.1), rgba(0,180,216,0.05)); border-radius:8px; border:1px solid rgba(0,180,216,0.3);">
+                    <h4 style="color:#00b4d8; margin-top:0;">🚀 비즈니스에 맞는 맞춤 솔루션이 필요하신가요?</h4>
+                    <p style="margin-bottom:15px;">
+                        SEO 대시보드부터 맞춤형 웹 애플리케이션까지, 귀사의 니즈에 맞춰 제작해드립니다.
+                    </p>
+                    <p><a href="#contact"
+                            style="display:inline-block; padding:12px 30px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:600; transition:background 0.3s;">상담
+                            신청하기 →</a></p>
+                </div>
+            </article>
+
+            <!-- Lightbox Modal -->
+            <div id="portfolio-lightbox" class="lightbox">
+                <div class="lightbox-content">
+                    <span class="lightbox-close">&times;</span>
+                    <button class="lightbox-btn lightbox-prev">‹</button>
+                    <div class="lightbox-image-container">
+                        <img id="lightbox-img" src="" alt="프로젝트 이미지">
+                    </div>
+                    <button class="lightbox-btn lightbox-next">›</button>
+                    <div class="lightbox-caption">
+                        <h3 id="lightbox-title"></h3>
+                        <p id="lightbox-counter"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 진행 방식 -->
+            <article id="process">
+                <h2 class="major">진행 방식</h2>
+                <p><em>바쁜 사장님을 위한, 단순하지만 탄탄한 4단계 프로세스</em></p>
+
+                <h3>1. 무료 상담 (15~30분)</h3>
+                <p>
+                    업종, 위치, 타깃 고객, 현재 온라인 상황을 간단히 파악합니다.<br /> 한국어로 편하게 질문하시고, 궁금한 점을 모두 물어보셔도 좋습니다.
+                </p>
+
+                <h3>2. 진단 & 전략 설계</h3>
+                <p>다음 항목을 중심으로 분석 리포트를 제공합니다.</p>
+                <ul>
+                    <li>현재 구글 검색 순위 및 노출 키워드</li>
+                    <li>경쟁 업소(한인/현지) 비교</li>
+                    <li>로컬 SEO 기회(지도·근처 검색 등)</li>
+                    <li>3~6개월 안에 노려볼 수 있는 키워드</li>
+                </ul>
+
+                <h3>3. 실행 (Implementation)</h3>
+                <p>
+                    사장님께서 방향과 예산에 동의하시면, 저희가 실제 작업을 진행합니다.<br /> 웹사이트 수정, 콘텐츠 제작, 로컬 SEO 셋업, 구글 비즈니스 관리 등
+                    <strong>바쁜 사장님 대신 대부분을 저희가 처리</strong>합니다.
+                </p>
+
+                <h3>4. 리포트 & 최적화</h3>
+                <p>매달 다음 내용을 정리해서 보고드립니다.</p>
+                <ul>
+                    <li>핵심 키워드 순위 변화</li>
+                    <li>구글 검색에서의 노출·클릭 수</li>
+                    <li>지도에서 전화/길찾기/웹사이트 클릭 수</li>
+                    <li>다음 달에 집중할 작업 방향</li>
+                </ul>
+
+                <p>숫자와 예시 중심으로 설명드리기 때문에, 마케팅이 처음이신 사장님도 쉽게 이해하실 수 있습니다.</p>
+
+                <div
+                    style="margin-top:40px; padding:25px; background:linear-gradient(135deg, rgba(0,180,216,0.1), rgba(0,180,216,0.05)); border-radius:10px; border:1px solid rgba(0,180,216,0.3); text-align:center;">
+                    <h4 style="color:#00b4d8; margin-top:0; font-size:1.2em;">🚀 우리 업소도 검색 상단에 올릴 수 있을까요?</h4>
+                    <p style="margin-bottom:18px;">무료 진단을 통해 <strong>현재 순위, 경쟁 상황, 3~6개월 예상 목표</strong>를 구체적으로 보여드립니다.
+                    </p>
+                    <a href="#contact"
+                        style="display:inline-block; padding:14px 34px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:700;">
+                        무료 SEO 진단 신청 →
+                    </a>
+                </div>
+            </article>
+
+            <!-- 상담 신청 -->
+            <article id="contact">
+                <h2 class="major">상담 신청</h2>
+                <p style="font-size:1.05em;">
+                    <strong>“우리 비즈니스도 온라인에서 더 잘 보일 수 있을까?”</strong><br /> 그 질문에 대해, 실제 데이터와 사례를 바탕으로 답해드립니다.
+                </p>
+
+                <div
+                    style="margin:30px 0; padding:25px; background:rgba(0,180,216,0.08); border-radius:10px; border-left:5px solid #00b4d8;">
+                    <h3 style="margin-top:0; color:#00b4d8;">💡 무료 상담 시 제공 내용</h3>
+                    <ul style="margin-bottom:0;">
+                        <li>현재 구글/지도 노출 상태 간단 진단</li>
+                        <li>경쟁 업소 2~3곳 비교 분석</li>
+                        <li>추천 키워드 및 예상 달성 기간</li>
+                        <li>예산·기간에 따른 현실적인 플랜 제안</li>
+                    </ul>
+                </div>
+
+                <div style="margin:30px 0; padding:25px; background:rgba(255,255,255,0.03); border-radius:10px;">
+                    <h3 style="margin-top:0;">📞 연락처</h3>
+                    <p><strong>📧 이메일:</strong> <a href="mailto:info@mosoft.ca"
+                            style="color:#00b4d8;">info@mosoft.ca</a></p>
+                    <p><strong>☎️ 전화:</strong> <a href="tel:+14165672438" style="color:#00b4d8;">+1-416-567-2438</a></p>
+                    <p><strong>📍 주소:</strong> Unit 99, Richmond Hill, ON L4C 5W4</p>
+                    <p><strong>🕒 상담 시간:</strong> 월–금, 오전 9시 ~ 오후 6시 (EST)</p>
+                    <p><strong>🌐 언어:</strong> 한국어 / English</p>
+                </div>
+
+                <div style="margin:30px 0;">
+                    <h3>🗺️ 서비스 지역</h3>
+                    <p><strong>토론토 및 GTA 전 지역</strong>을 대상으로 합니다.</p>
+                    <ul>
+                        <li><a href="./local-seo/toronto-seo-ko.html">Toronto</a></li>
+                        <li><a href="./local-seo/richmond-hill-seo-ko.html">Richmond Hill</a></li>
+                        <li><a href="./local-seo/markham-seo-ko.html">Markham</a></li>
+                        <li><a href="./local-seo/vaughan-seo-ko.html">Vaughan</a></li>
+                        <li><a href="./local-seo/north-york-seo-ko.html">North York</a></li>
+                        <li><a href="./local-seo/scarborough-seo-ko.html">Scarborough</a></li>
+                        <li><a href="./local-seo/mississauga-brampton-seo-ko.html">Mississauga & Brampton</a></li>
+                    </ul>
+                </div>
+
+                <div
+                    style="margin:40px 0; padding:30px; background:linear-gradient(135deg, rgba(0,180,216,0.15), rgba(0,180,216,0.05)); border-radius:10px; text-align:center;">
+                    <h3 style="margin-top:0; color:#00b4d8; font-size:1.4em;">🎯 지금이 제일 빠른 시점입니다</h3>
+                    <p style="font-size:1.05em; margin:18px 0;">
+                        경쟁 업소가 SEO를 시작하기 전에 먼저 움직이면, 같은 비용으로 더 큰 효과를 볼 수 있습니다.
+                    </p>
+                    <div style="margin-top:24px;">
+                        <a href="tel:+14165672438"
+                            style="display:inline-block; margin:8px; padding:16px 36px; background:#00b4d8; color:#fff; text-decoration:none; border-radius:5px; font-weight:700;">
+                            📞 바로 전화하기
+                        </a>
+                        <a href="mailto:info@mosoft.ca"
+                            style="display:inline-block; margin:8px; padding:16px 36px; background:#333; color:#fff; text-decoration:none; border-radius:5px; font-weight:700;">
+                            📧 이메일로 문의하기
+                        </a>
+                    </div>
+                </div>
+
+                <div style="margin:30px 0;">
+                    <h3>🌐 소셜 미디어</h3>
+                    <p>
+                        <a href="https://www.facebook.com/mosoft.ca" target="_blank" rel="noopener noreferrer"
+                            style="margin-right:18px; color:#00b4d8;">📘 Facebook</a>
+                        <a href="https://www.instagram.com/mosoft.ca" target="_blank" rel="noopener noreferrer"
+                            style="color:#00b4d8;">📷 Instagram</a>
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <footer id="footer">
+            <p><strong>Mosoft</strong> – 토론토 SEO & 로컬 SEO · 한인 비즈니스 디지털 마케팅 전문</p>
+            <p>Unit 99, Richmond Hill, ON L4C 5W4 |
+                <a href="tel:+14165672438">+1-416-567-2438</a> |
+                <a href="mailto:info@mosoft.ca" style="color:#00b4d8;">info@mosoft.ca</a>
+            </p>
+
+            <nav style="margin:20px 0;">
+                <a href="#intro" style="margin:0 10px; color:#aaa;">회사 소개</a> |
+                <a href="#services" style="margin:0 10px; color:#aaa;">서비스</a> |
+                <a href="#portfolio" style="margin:0 10px; color:#aaa;">포트폴리오</a> |
+                <a href="#process" style="margin:0 10px; color:#aaa;">진행 방식</a> |
+                <a href="#contact" style="margin:0 10px; color:#aaa;">상담 신청</a> |
+                <a href="./privacy-policy-ko.html" style="margin:0 10px; color:#aaa;">개인정보처리방침</a>
+            </nav>
+
+            <p class="copyright" style="margin-top:20px;">&copy; <span id="year">2025</span> Mosoft. All Rights
+                Reserved.</p>
+        </footer>
+    </div>
+
+    <div id="bg"></div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/portfolio-grid.js"></script>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Remove preload class immediately
+        document.body.classList.remove('is-preload');
+    </script>
+
+</body>
+
+</html>

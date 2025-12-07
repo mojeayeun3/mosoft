@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO 분석 도구 - 추후 개선 계획</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #333;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 20px;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 30px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .phase {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .difficulty {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .low { background: #d4edda; color: #155724; }
+        .medium { background: #fff3cd; color: #856404; }
+        .high { background: #f8d7da; color: #721c24; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="seo-analyzer.html" class="back-link">← SEO 분석 도구로 돌아가기</a>
+        
+        <h1>SEO 분석 도구 - 추후 개선 계획</h1>
+
+        <div class="phase">
+            <h2>Phase 2: 중기 개선사항 (3-6개월)</h2>
+        </div>
+
+        <h3>1. Google Business Profile (GBP) 연동</h3>
+        <ul>
+            <li><strong>목적:</strong> Local SEO 정확도 향상</li>
+            <li><strong>수집 데이터:</strong>
+                <ul>
+                    <li>GBP 등록 여부</li>
+                    <li>리뷰 개수 및 평균 평점</li>
+                    <li>NAP (Name, Address, Phone) 일관성</li>
+                    <li>Map Pack 순위</li>
+                </ul>
+            </li>
+            <li><strong>구현 난이도:</strong> <span class="difficulty high">높음</span> (Google My Business API 필요)</li>
+            <li><strong>영향도:</strong> 높음 (Local SEO 핵심 요소)</li>
+        </ul>
+
+        <h3>2. 키워드 분석 강화</h3>
+        <ul>
+            <li><strong>키워드 밀도 체크:</strong>
+                <ul>
+                    <li>타겟 키워드 빈도 측정</li>
+                    <li>과도한 키워드 stuffing 감지 (3% 이상 경고)</li>
+                    <li>LSI 키워드 (관련 키워드) 포함 여부</li>
+                </ul>
+            </li>
+            <li><strong>키워드 Cannibalization 감지:</strong>
+                <ul>
+                    <li>같은 키워드로 여러 페이지가 경쟁하는지 확인</li>
+                    <li>중복 콘텐츠 문제 식별</li>
+                </ul>
+            </li>
+            <li><strong>구현 난이도:</strong> <span class="difficulty medium">중간</span></li>
+            <li><strong>영향도:</strong> 높음</li>
+        </ul>
+
+        <h3>3. Sitemap & Robots.txt 분석</h3>
+        <ul>
+            <li><strong>Sitemap 존재 확인:</strong>
+                <ul>
+                    <li>/sitemap.xml 접근 가능 여부</li>
+                    <li>Sitemap에 포함된 URL 개수</li>
+                    <li>최근 업데이트 날짜</li>
+                </ul>
+            </li>
+            <li><strong>Robots.txt 분석:</strong>
+                <ul>
+                    <li>존재 여부</li>
+                    <li>크롤링 차단 규칙 확인</li>
+                    <li>Sitemap 위치 명시 여부</li>
+                </ul>
+            </li>
+            <li><strong>구현 난이도:</strong> <span class="difficulty low">낮음</span></li>
+            <li><strong>영향도:</strong> 중간</li>
+        </ul>
+
+        <h3>4. Redirect Chain 분석</h3>
+        <ul>
+            <li><strong>301/302 리다이렉트 체인 길이 측정</strong></li>
+            <li>0-1개: 정상 (10점)</li>
+            <li>2개: 경고 (5점)</li>
+            <li>3개 이상: 심각 (0점)</li>
+            <li><strong>구현 난이도:</strong> <span class="difficulty medium">중간</span></li>
+            <li><strong>영향도:</strong> 중간 (속도 및 크롤링 효율성)</li>
+        </ul>
+
+        <div style="background: #d4edda; padding: 15px; border-radius: 5px; margin: 20px 0;">
+            <strong>✅ v1.1에서 해결된 이슈:</strong>
+            <ul>
+                <li>지역 키워드 하드코딩 문제 → <strong>한영 병행 검색 지원</strong></li>
+                <li>한글 페이지 Local SEO 점수 낮음 → <strong>토론토, 캐나다, 한인 등 한글 키워드 추가</strong></li>
+            </ul>
+        </div>
+
+        <h3>5. Hreflang 태그 검증 (다국어 사이트)</h3>
+        <ul>
+            <li><strong>다국어 사이트의 언어별 URL 매핑</strong></li>
+            <li>올바른 hreflang 구현 확인</li>
+            <li>양방향 연결 검증</li>
+            <li><strong>구현 난이도:</strong> <span class="difficulty high">높음</span></li>
+            <li><strong>영향도:</strong> 낮음 (다국어 사이트만 해당)</li>
+        </ul>
+
+        <h3>6. 콘텐츠 품질 고도화</h3>
+        <ul>
+            <li><strong>가독성 점수 (Flesch Reading Ease):</strong>
+                <ul>
+                    <li>문장 길이</li>
+                    <li>단어 복잡도</li>
+                    <li>단락 구조</li>
+                </ul>
+            </li>
+            <li><strong>이미지 최적화:</strong>
+                <ul>
+                    <li>파일 크기 (WebP 사용 권장)</li>
+                    <li>Lazy loading 적용 여부</li>
+                    <li>이미지 압축률</li>
+                </ul>
+            </li>
+            <li><strong>구현 난이도:</strong> <span class="difficulty medium">중간</span></li>
+            <li><strong>영향도:</strong> 중간</li>
+        </ul>
+
+        <div class="phase">
+            <h2>Phase 3: 장기 고급 기능 (6-12개월)</h2>
+        </div>
+
+        <h3>1. E-E-A-T 점수</h3>
+        <p>Experience, Expertise, Authoritativeness, Trust</p>
+        <ul>
+            <li><strong>저자 정보:</strong>
+                <ul>
+                    <li>저자 프로필 존재 여부</li>
+                    <li>전문성 증명 (학력, 경력)</li>
+                </ul>
+            </li>
+            <li><strong>신뢰성 신호:</strong>
+                <ul>
+                    <li>외부 권위 사이트 링크</li>
+                    <li>인용/출처 명시</li>
+                    <li>최근 업데이트 날짜</li>
+                </ul>
+            </li>
+            <li><strong>구현 난이도:</strong> <span class="difficulty high">매우 높음</span> (NLP 분석 필요)</li>
+            <li><strong>영향도:</strong> 높음 (Google 핵심 평가 기준)</li>
+        </ul>
+
+        <h3>2. Semantic Relevance (의미론적 관련성)</h3>
+        <ul>
+            <li><strong>NLP 기반 콘텐츠 분석:</strong>
+                <ul>
+                    <li>경쟁 상위 문서와 의미적 유사도</li>
+                    <li>주제 커버리지 (핵심 서브토픽 포함 여부)</li>
+                    <li>TF-IDF 기반 키워드 중요도</li>
+                </ul>
+            </li>
+            <li><strong>구현 난이도:</strong> <span class="difficulty high">매우 높음</span></li>
+            <li><strong>영향도:</strong> 높음</li>
+        </ul>
+
+        <h3>3. Core Web Vitals 상세 분석</h3>
+        <ul>
+            <li><strong>LCP (Largest Contentful Paint):</strong>
+                <ul>
+                    <li>2.5초 이하: 우수</li>
+                    <li>2.5-4.0초: 개선 필요</li>
+                    <li>4.0초 이상: 나쁨</li>
+                </ul>
+            </li>
+            <li><strong>CLS (Cumulative Layout Shift):</strong>
+                <ul>
+                    <li>0.1 이하: 우수</li>
+                    <li>0.1-0.25: 개선 필요</li>
+                    <li>0.25 이상: 나쁨</li>
+                </ul>
+            </li>
+            <li><strong>INP (Interaction to Next Paint):</strong>
+                <ul>
+                    <li>200ms 이하: 우수</li>
+                    <li>200-500ms: 개선 필요</li>
+                    <li>500ms 이상: 나쁨</li>
+                </ul>
+            </li>
+            <li><strong>구현 난이도:</strong> <span class="difficulty medium">중간</span> (PageSpeed API 확장)</li>
+            <li><strong>영향도:</strong> 높음 (Google 순위 요소)</li>
+        </ul>
+
+        <h3>4. Backlink 분석</h3>
+        <ul>
+            <li><strong>외부 링크 품질 평가:</strong>
+                <ul>
+                    <li>백링크 개수</li>
+                    <li>도메인 권위도 (Domain Authority)</li>
+                    <li>앵커 텍스트 분포</li>
+                </ul>
+            </li>
+            <li><strong>구현 난이도:</strong> <span class="difficulty high">매우 높음</span> (외부 API 필요)</li>
+            <li><strong>영향도:</strong> 매우 높음 (SEO 최대 요소)</li>
+        </ul>
+
+        <h3>5. 콘텐츠 Freshness (신선도)</h3>
+        <ul>
+            <li><strong>최근 업데이트 날짜:</strong>
+                <ul>
+                    <li>마지막 수정일 추출</li>
+                    <li>뉴스/블로그: 7일 이내 업데이트 권장</li>
+                    <li>서비스 페이지: 6개월 이내 권장</li>
+                </ul>
+            </li>
+            <li><strong>구현 난이도:</strong> <span class="difficulty low">낮음</span></li>
+            <li><strong>영향도:</strong> 중간 (업종에 따라 다름)</li>
+        </ul>
+
+        <h3>6. 경쟁사 비교 분석</h3>
+        <ul>
+            <li><strong>타겟 키워드 상위 10개 페이지 분석</strong></li>
+            <li>경쟁사 대비 점수 비교</li>
+            <li>Gap Analysis (부족한 부분 식별)</li>
+            <li><strong>구현 난이도:</strong> <span class="difficulty high">높음</span></li>
+            <li><strong>영향도:</strong> 매우 높음 (실제 순위 예측)</li>
+        </ul>
+
+        <h3>7. Uniqueness (표절 감지)</h3>
+        <ul>
+            <li><strong>중복 콘텐츠 체크:</strong>
+                <ul>
+                    <li>사이트 내 중복</li>
+                    <li>외부 사이트 복사 여부</li>
+                    <li>Copyscape API 연동</li>
+                </ul>
+            </li>
+            <li><strong>구현 난이도:</strong> <span class="difficulty high">높음</span></li>
+            <li><strong>영향도:</strong> 높음 (Google 패널티 방지)</li>
+        </ul>
+
+        <h2>우선순위 요약</h2>
+
+        <h3>즉시 구현 가능 (이미 완료 ✅)</h3>
+        <ol>
+            <li>Status Code 체크</li>
+            <li>Canonical 태그 확인</li>
+            <li>Meta Robots (noindex/nofollow) 체크</li>
+            <li>Heading 구조 분석 (H2, H3)</li>
+            <li>Location Keywords 커스터마이징</li>
+        </ol>
+
+        <h3>3개월 내 권장</h3>
+        <ol>
+            <li>Sitemap & Robots.txt 분석</li>
+            <li>키워드 밀도 체크</li>
+            <li>Redirect Chain 분석</li>
+            <li>이미지 최적화 분석</li>
+        </ol>
+
+        <h3>6개월 내 권장</h3>
+        <ol>
+            <li>GBP 연동</li>
+            <li>Core Web Vitals 상세 분석</li>
+            <li>가독성 점수</li>
+            <li>콘텐츠 Freshness</li>
+        </ol>
+
+        <h3>장기 계획 (1년+)</h3>
+        <ol>
+            <li>E-E-A-T 점수</li>
+            <li>Semantic Relevance</li>
+            <li>Backlink 분석</li>
+            <li>경쟁사 비교 분석</li>
+        </ol>
+
+        <h2>참고: 데이터 수집 난이도</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>항목</th>
+                    <th>수집 방법</th>
+                    <th>API 필요</th>
+                    <th>난이도</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Status Code</td>
+                    <td>직접 크롤링</td>
+                    <td>❌</td>
+                    <td><span class="difficulty low">낮음</span></td>
+                </tr>
+                <tr>
+                    <td>Canonical</td>
+                    <td>HTML 파싱</td>
+                    <td>❌</td>
+                    <td><span class="difficulty low">낮음</span></td>
+                </tr>
+                <tr>
+                    <td>Robots Meta</td>
+                    <td>HTML 파싱</td>
+                    <td>❌</td>
+                    <td><span class="difficulty low">낮음</span></td>
+                </tr>
+                <tr>
+                    <td>Sitemap</td>
+                    <td>HTTP 요청</td>
+                    <td>❌</td>
+                    <td><span class="difficulty low">낮음</span></td>
+                </tr>
+                <tr>
+                    <td>GBP 정보</td>
+                    <td>Google API</td>
+                    <td>✅</td>
+                    <td><span class="difficulty high">높음</span></td>
+                </tr>
+                <tr>
+                    <td>Backlinks</td>
+                    <td>Ahrefs/Moz API</td>
+                    <td>✅</td>
+                    <td><span class="difficulty high">매우 높음</span></td>
+                </tr>
+                <tr>
+                    <td>E-E-A-T</td>
+                    <td>NLP 분석</td>
+                    <td>✅</td>
+                    <td><span class="difficulty high">매우 높음</span></td>
+                </tr>
+                <tr>
+                    <td>경쟁사 비교</td>
+                    <td>복합 크롤링</td>
+                    <td>❌</td>
+                    <td><span class="difficulty high">높음</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="margin-top: 40px; padding-top: 20px; border-top: 2px solid #eee; color: #666; font-size: 14px;">
+            <strong>현재 버전:</strong> v1.1 (2024-12-06)<br>
+            <strong>마지막 업데이트:</strong> Technical SEO 강화, Content 구조 평가 추가
+        </p>
+    </div>
+</body>
+</html>

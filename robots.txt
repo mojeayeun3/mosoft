@@ -1,0 +1,33 @@
+# robots.txt for mosoft.ca
+# SEO-optimized and simplified
+# Last updated: 2025-11-29
+
+# ============================================================
+# GLOBAL RULES - Allow all search engines
+# ============================================================
+User-agent: *
+Allow: /
+
+# ============================================================
+# BLOCKED AREAS (only if they actually exist)
+# ============================================================
+# Disallow: /admin/          # Uncomment if admin area exists
+# Disallow: /private/        # Uncomment if private area exists
+# Disallow: /*.json          # Uncomment if you want to block JSON files
+
+# ============================================================
+# CRAWL-DELAY (Optional - use only if needed)
+# ============================================================
+# Crawl-delay: 10           # Uncomment only if server is overloaded
+
+# ============================================================
+# SITEMAP LOCATION
+# ============================================================
+Sitemap: https://mosoft.ca/sitemap.xml
+
+# ============================================================
+# NOTES:
+# - All pages (English and Korean) are crawlable
+# - CSS, JS, and images are automatically crawlable
+# - No need for explicit Allow rules when Allow: / is set
+# ============================================================

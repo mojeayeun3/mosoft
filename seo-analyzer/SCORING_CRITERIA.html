@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO 분석 도구 - 현재 평가 기준</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #333;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; border-left: 4px solid #3498db; padding-left: 15px; }
+        h3 { color: #555; margin-top: 20px; }
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            border-left: 4px solid #3498db;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        .back-link:hover { text-decoration: underline; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) { background: #f9f9f9; }
+        .score-box {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .critical { background: #f8d7da; color: #721c24; padding: 15px; border-radius: 5px; margin: 15px 0; }
+        .good { background: #d4edda; color: #155724; padding: 15px; border-radius: 5px; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="seo-analyzer.html" class="back-link">← SEO 분석 도구로 돌아가기</a>
+        
+        <h1>SEO 분석 도구 - 현재 평가 기준 (v1.1)</h1>
+
+        <h2>📊 전체 점수 구성</h2>
+        <p>총점 100점 = 각 카테고리 점수 × 가중치</p>
+
+        <div class="score-box">
+            <h3>가중치 배분</h3>
+            <pre>Local SEO:   30% (30점 만점)
+Technical:   20% (20점 만점) - 업그레이드됨!
+On-Page:     20% (20점 만점)
+Mobile:      15% (15점 만점)
+Content:     15% (15점 만점)</pre>
+        </div>
+
+        <h2>1. Local SEO (30점) - 지역 비즈니스 최적화</h2>
+
+        <h3>1.1 Title에 지역명 포함 (40점)</h3>
+        <ul>
+            <li>✅ Toronto, GTA, Ontario, North York 등 포함: 40점</li>
+            <li>❌ 지역명 없음: 0점</li>
+        </ul>
+
+        <h3>1.2 Meta Description에 지역명 포함 (30점)</h3>
+        <ul>
+            <li>✅ 지역 키워드 포함: 30점</li>
+            <li>❌ 없음: 0점</li>
+        </ul>
+
+        <h3>1.3 Schema Markup (30점)</h3>
+        <ul>
+            <li>✅ LocalBusiness, Organization 등 schema 존재: 30점</li>
+            <li>❌ 없음: 0점</li>
+        </ul>
+
+        <div class="good">
+            <strong>지원 지역 키워드 (한영 병행):</strong><br>
+            <strong>영어:</strong> toronto, canada, ontario, gta, north york, scarborough, etobicoke, 
+            mississauga, markham, vaughan, richmond hill, brampton, pickering, ajax, whitby, oshawa<br>
+            <strong>한글:</strong> 토론토, 캐나다, 온타리오, 노스욕, 스카보로, 에토비코, 미시사가, 
+            마컴, 본, GTA지역, 리치몬드힐, 브램튼, 피커링, 에이잭스, 휘트비, 오샤와<br>
+            <strong>한인:</strong> 한인, 한국인, 교민, 동포, 코리안
+        </div>
+
+        <div class="good">
+            <strong>✅ 한글 페이지 예시 (100점):</strong>
+            <pre>&lt;title&gt;토론토 한인 SEO 서비스 | Toronto GTA&lt;/title&gt;
+&lt;meta name="description" content="캐나다 토론토 한인 비즈니스 전문 SEO"&gt;</pre>
+        </div>
+
+        <h2>2. Technical SEO (20점) - 기술적 최적화</h2>
+
+        <h3>2.1 Status Code (20점)</h3>
+        <ul>
+            <li>✅ 200 OK: 20점</li>
+            <li>⚠️ 3xx Redirect: 10점</li>
+            <li>❌ 4xx, 5xx: 0점</li>
+        </ul>
+
+        <h3>2.2 SSL/HTTPS (20점)</h3>
+        <ul>
+            <li>✅ HTTPS: 20점</li>
+            <li>❌ HTTP: 0점</li>
+        </ul>
+
+        <h3>2.3 Meta Robots (30점) ⚠️ 치명적!</h3>
+        <ul>
+            <li>✅ 정상 (index, follow): 30점</li>
+            <li>⚠️ nofollow: 15점</li>
+            <li>❌ <strong>noindex: 전체 Technical 점수 0점!</strong></li>
+        </ul>
+
+        <div class="critical">
+            <strong>⚠️ 치명적 오류:</strong><br>
+            <code>&lt;meta name="robots" content="noindex, nofollow"&gt;</code><br>
+            → 이것이 있으면 검색 결과에 안 나옵니다! Technical 점수 0점 처리
+        </div>
+
+        <h3>2.4 Canonical Tag (30점)</h3>
+        <ul>
+            <li>✅ Canonical 태그 존재: 30점</li>
+            <li>❌ 없음: 0점</li>
+        </ul>
+
+        <h3>2.5 Schema Markup (보너스, 20점)</h3>
+        <ul>
+            <li>✅ 존재: +20점</li>
+            <li>최대 100점까지만 인정</li>
+        </ul>
+
+        <h2>3. On-Page SEO (20점) - 페이지 내 최적화</h2>
+
+        <h3>3.1 Title 태그 (25점)</h3>
+        <ul>
+            <li>✅ 30-60자: 25점</li>
+            <li>⚠️ 1-30자 또는 60자 초과: 15점</li>
+            <li>❌ 없음: 0점</li>
+        </ul>
+
+        <h3>3.2 Meta Description (25점)</h3>
+        <ul>
+            <li>✅ 120-160자: 25점</li>
+            <li>⚠️ 1-120자 또는 160자 초과: 15점</li>
+            <li>❌ 없음: 0점</li>
+        </ul>
+
+        <h3>3.3 H1 태그 (20점)</h3>
+        <ul>
+            <li>✅ 정확히 1개: 20점</li>
+            <li>⚠️ 2개 이상: 10점</li>
+            <li>❌ 없음: 0점</li>
+        </ul>
+
+        <h3>3.4 이미지 Alt 속성 (15점)</h3>
+        <ul>
+            <li>Alt 있는 이미지 비율 × 15점</li>
+            <li>예: 80% = 12점</li>
+        </ul>
+
+        <h3>3.5 내부 링크 (15점)</h3>
+        <ul>
+            <li>✅ 10개 이상: 15점</li>
+            <li>⚠️ 5-9개: 10점</li>
+            <li>⚠️ 1-4개: 5점</li>
+            <li>❌ 없음: 0점</li>
+        </ul>
+
+        <h2>4. Content (15점) - 콘텐츠 품질</h2>
+
+        <h3>4.1 단어 수 (30점)</h3>
+        <ul>
+            <li>✅ 1000단어 이상: 30점</li>
+            <li>⚠️ 500-999단어: 22점</li>
+            <li>⚠️ 300-499단어: 15점</li>
+            <li>⚠️ 100-299단어: 8점</li>
+            <li>❌ 100단어 미만: 0점</li>
+        </ul>
+
+        <h3>4.2 H2 구조 (15점)</h3>
+        <ul>
+            <li>✅ 3개 이상: 15점</li>
+            <li>⚠️ 1-2개: 10점</li>
+            <li>❌ 없음: 0점</li>
+        </ul>
+
+        <h3>4.3 H3 구조 (15점)</h3>
+        <ul>
+            <li>✅ 2개 이상: 15점</li>
+            <li>⚠️ 1개: 8점</li>
+            <li>❌ 없음: 0점</li>
+        </ul>
+
+        <h3>4.4 Title-H1 일관성 (40점)</h3>
+        <ul>
+            <li>✅ 공통 단어 있음: 40점</li>
+            <li>❌ 전혀 다름: 0점</li>
+        </ul>
+
+        <h2>5. Mobile (15점) - 모바일 최적화</h2>
+
+        <h3>5.1 PageSpeed Performance (50점)</h3>
+        <ul>
+            <li>Google PageSpeed 점수 × 0.5</li>
+            <li>예: PageSpeed 80점 = 40점</li>
+        </ul>
+
+        <h3>5.2 Viewport Meta (17점)</h3>
+        <ul>
+            <li>✅ 존재: 17점</li>
+            <li>❌ 없음: 0점</li>
+        </ul>
+
+        <h3>5.3 읽기 쉬운 글꼴 (17점)</h3>
+        <ul>
+            <li>✅ 적절한 크기: 17점</li>
+            <li>❌ 너무 작음: 0점</li>
+        </ul>
+
+        <h3>5.4 터치 타겟 크기 (16점)</h3>
+        <ul>
+            <li>✅ 적절한 크기: 16점</li>
+            <li>❌ 너무 작음: 0점</li>
+        </ul>
+
+        <h2>📈 점수 해석 가이드</h2>
+
+        <table>
+            <tr>
+                <th>점수</th>
+                <th>등급</th>
+                <th>상태</th>
+                <th>조치</th>
+            </tr>
+            <tr>
+                <td>90-100점</td>
+                <td>🏆 Excellent</td>
+                <td>거의 완벽한 SEO</td>
+                <td>유지 관리만 필요</td>
+            </tr>
+            <tr>
+                <td>80-89점</td>
+                <td>✅ Good</td>
+                <td>양호한 SEO</td>
+                <td>일부 개선 필요</td>
+            </tr>
+            <tr>
+                <td>70-79점</td>
+                <td>⚠️ Fair</td>
+                <td>기본은 갖췄으나 부족</td>
+                <td>중요 요소 개선 필요</td>
+            </tr>
+            <tr>
+                <td>60-69점</td>
+                <td>😐 Poor</td>
+                <td>많은 개선 필요</td>
+                <td>즉시 수정 권장</td>
+            </tr>
+            <tr>
+                <td>0-59점</td>
+                <td>❌ Very Poor</td>
+                <td>심각한 문제</td>
+                <td>전면 재작업 필요</td>
+            </tr>
+        </table>
+
+        <h2>⚠️ 치명적 오류 (즉시 수정 필요)</h2>
+
+        <div class="critical">
+            <h3>1. noindex 설정</h3>
+            <code>&lt;meta name="robots" content="noindex"&gt;</code><br>
+            → 검색엔진이 페이지를 색인하지 않음!
+
+            <h3>2. Status Code 오류</h3>
+            404 Not Found, 500 Server Error<br>
+            → 사용자가 접근 불가!
+
+            <h3>3. SSL 미적용</h3>
+            HTTP 사이트<br>
+            → Chrome이 "안전하지 않음" 표시
+
+            <h3>4. Title/H1 없음</h3>
+            → Google이 페이지 주제를 파악 못 함
+        </div>
+
+        <h2>🎯 빠른 개선 팁</h2>
+
+        <h3>30분 안에 개선 가능:</h3>
+        <ol>
+            <li>✅ Title에 지역명 추가</li>
+            <li>✅ Meta Description 작성</li>
+            <li>✅ H1 태그 1개로 통일</li>
+            <li>✅ 이미지에 Alt 추가</li>
+        </ol>
+
+        <h3>1-2시간 소요:</h3>
+        <ol>
+            <li>⚙️ SSL 인증서 설치 (Let's Encrypt)</li>
+            <li>⚙️ Canonical 태그 추가</li>
+            <li>⚙️ H2, H3로 콘텐츠 구조화</li>
+            <li>⚙️ 내부 링크 5-10개 추가</li>
+        </ol>
+
+        <h3>며칠 소요:</h3>
+        <ol>
+            <li>📝 콘텐츠 500-1000단어로 확장</li>
+            <li>📝 Schema Markup 추가</li>
+            <li>📝 PageSpeed 최적화 (이미지 압축 등)</li>
+        </ol>
+
+        <h2>🔄 주기적 확인 권장</h2>
+
+        <ul>
+            <li><strong>매주:</strong> noindex 체크, Status Code 확인</li>
+            <li><strong>매월:</strong> PageSpeed 점수, 깨진 링크</li>
+            <li><strong>분기:</strong> 콘텐츠 업데이트, 전체 재점검</li>
+            <li><strong>연간:</strong> 경쟁사 비교, 전략 재수립</li>
+        </ul>
+
+        <p style="margin-top: 40px; padding-top: 20px; border-top: 2px solid #eee; color: #666; font-size: 14px;">
+            <strong>현재 버전:</strong> v1.1 (2024-12-06)<br>
+            <strong>마지막 업데이트:</strong> Technical SEO 강화, Content 구조 평가 추가
+        </p>
+    </div>
+</body>
+</html>
