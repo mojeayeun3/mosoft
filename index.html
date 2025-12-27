@@ -998,12 +998,11 @@
 
                 <div style="margin:30px 0; padding:20px; background:rgba(255,255,255,0.03); border-radius:8px;">
                     <h3 style="margin-top:0;">📞 Get In Touch</h3>
-                    <p><strong>📧 Email:</strong> <a href="mailto:info@mosoft.ca" style="color:#00b4d8;"><span
-                                class="__cf_email__"
-                                data-cfemail="c8a1a6aea788a5a7bba7aebce6aba9">[email&#160;protected]</span></a></p>
+                    <p><strong>📧 Email:</strong> <a href="mailto:info@mosoft.ca"
+                            style="color:#00b4d8;">info@mosoft.ca</a></p>
                     <p><strong>☎️ Phone:</strong> <a href="tel:+14165672438" style="color:#00b4d8;">+1-416-567-2438</a>
                     </p>
-                    <p><strong>📍 Address:</strong> Unit 99, Richmond Hill, ON L4C 5W4</p>
+                    <p><strong>📍 Address:</strong> 99 Castle Rock Dr, Richmond Hill, ON L4C 5W4</p>
                     <p><strong>🕒 Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM EST</p>
                     <p><strong>🌐 Languages:</strong> English / 한국어 (Korean)</p>
                 </div>
@@ -1047,7 +1046,7 @@
         <footer id="footer">
             <div style="margin-bottom:20px;">
                 <p><strong>Mosoft</strong> – Toronto SEO & Local SEO Agency for Korean & Local Small Businesses</p>
-                <p>Unit 99, Richmond Hill, ON L4C 5W4 | <a href="tel:+14165672438">+1-416-567-2438</a> | <a
+                <p>99 Castle Rock Dr, Richmond Hill, ON L4C 5W4 | <a href="tel:+14165672438">+1-416-567-2438</a> | <a
                         href="mailto:info@mosoft.ca">info@mosoft.ca</a></p>
             </div>
 
@@ -1067,6 +1066,318 @@
 
     <div id="bg"></div>
 
+    <!-- Promotional Popup -->
+    <div id="promoPopup" class="promo-popup-overlay">
+        <div class="promo-popup">
+            <div class="promo-header">
+                <h2>$299 One-Page Site <br> 이벤트</h2>
+                <p class="promo-subtitle"><strong>카독:mojeayeun</strong></p>
+                <a href="tel:416-617-9395" class="promo-phone-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    416-617-9395
+                </a>
+            </div>
+
+            <div class="promo-content">
+                <p>Mosoft는 구글검색에 최적화된 One-Page Site를 <br> <strong>$299</strong>에 제공합니다.</p>
+                <a href="https://shopsite.ca" target="_blank" rel="noopener noreferrer" class="promo-link">
+                    자세한 내용은 shopsite.ca →
+                </a>
+            </div>
+
+            <div class="promo-footer">
+                <label class="promo-checkbox">
+                    <input type="checkbox" id="dontShowToday">
+                    <span>오늘 하루 안 보기</span>
+                </label>
+                <button class="promo-close-btn" id="closePopupBtn">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .promo-popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(8px);
+            z-index: 100000;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .promo-popup-overlay.active {
+            display: flex;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .promo-popup {
+            position: relative;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-radius: 20px;
+            max-width: 500px;
+            width: 90%;
+            padding: 0;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            animation: slideUp 0.4s ease;
+            overflow: hidden;
+        }
+
+        .promo-header {
+            background: linear-gradient(135deg, #00b4d8 0%, #0077b6 100%);
+            padding: 35px 30px 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .promo-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .promo-header h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+        .promo-subtitle {
+            margin: 0 0 20px 0;
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.95);
+            position: relative;
+            z-index: 1;
+        }
+
+        .promo-phone-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #fff;
+            color: #0077b6;
+            padding: 14px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        .promo-phone-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            background: #f0f0f0;
+        }
+
+        .promo-phone-btn svg {
+            animation: ring 2s ease-in-out infinite;
+        }
+
+        @keyframes ring {
+
+            0%,
+            100% {
+                transform: rotate(0deg);
+            }
+
+            10%,
+            30% {
+                transform: rotate(-10deg);
+            }
+
+            20%,
+            40% {
+                transform: rotate(10deg);
+            }
+        }
+
+        .promo-content {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .promo-content p {
+            margin: 0 0 20px 0;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .promo-content strong {
+            color: #00b4d8;
+            font-size: 1.2em;
+        }
+
+        .promo-link {
+            display: inline-block;
+            color: #00b4d8;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 20px;
+            border: 2px solid #00b4d8;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .promo-link:hover {
+            background: #00b4d8;
+            color: #fff;
+            transform: translateX(5px);
+        }
+
+        .promo-footer {
+            padding: 20px 30px;
+            background: rgba(0, 0, 0, 0.2);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .promo-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            user-select: none;
+            position: relative;
+        }
+
+        .promo-checkbox input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            margin: 0;
+            opacity: 0;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Custom checkbox visual */
+        .promo-checkbox input[type="checkbox"]+span::before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.6);
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.1);
+            vertical-align: middle;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        /* Checkmark when checked */
+        .promo-checkbox input[type="checkbox"]:checked+span::before {
+            background-color: #00b4d8;
+            border-color: #00b4d8;
+            background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="white" d="M13.5 2L6 9.5L2.5 6L1 7.5L6 12.5L15 3.5z"/></svg>');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 14px;
+        }
+
+        .promo-checkbox:hover input[type="checkbox"]+span::before {
+            border-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .promo-checkbox span {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.9);
+            display: flex;
+            align-items: center;
+        }
+
+        .promo-close-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            padding: 10px 40px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .promo-close-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        @media screen and (max-width: 480px) {
+            .promo-popup {
+                width: 95%;
+                margin: 20px;
+            }
+
+            .promo-header h2 {
+                font-size: 1.2rem;
+            }
+
+            .promo-phone-btn {
+                font-size: 1rem;
+                padding: 12px 24px;
+            }
+
+            .promo-footer-center {
+                margin-top: 10px;
+            }
+
+            .promo-close-btn {
+                width: 100%;
+            }
+        }
+    </style>
+
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
@@ -1081,6 +1392,63 @@
 
         // Remove preload class immediately
         document.body.classList.remove('is-preload');
+
+        // Promo Popup Logic
+        (function () {
+            const popup = document.getElementById('promoPopup');
+            const closeBtnFooter = document.getElementById('closePopupBtn');
+            const dontShowCheckbox = document.getElementById('dontShowToday');
+
+            // Check if popup should be shown
+            function shouldShowPopup() {
+                const dontShowUntil = localStorage.getItem('promoPopupHideUntil');
+                if (dontShowUntil) {
+                    const hideUntilDate = new Date(dontShowUntil);
+                    const now = new Date();
+                    return now > hideUntilDate;
+                }
+                return true;
+            }
+
+            // Show popup after 2 seconds if allowed
+            if (shouldShowPopup()) {
+                setTimeout(function () {
+                    popup.classList.add('active');
+                }, 2000);
+            }
+
+            // Close popup function
+            function closePopup() {
+                popup.classList.remove('active');
+            }
+
+            // Event listeners
+            closeBtnFooter.addEventListener('click', closePopup);
+
+            // Checkbox change event - close immediately when checked
+            dontShowCheckbox.addEventListener('change', function () {
+                if (dontShowCheckbox.checked) {
+                    const tomorrow = new Date();
+                    tomorrow.setHours(24, 0, 0, 0);
+                    localStorage.setItem('promoPopupHideUntil', tomorrow.toISOString());
+                    popup.classList.remove('active');
+                }
+            });
+
+            // Close on overlay click
+            popup.addEventListener('click', function (e) {
+                if (e.target === popup) {
+                    closePopup();
+                }
+            });
+
+            // Close on ESC key
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && popup.classList.contains('active')) {
+                    closePopup();
+                }
+            });
+        })();
     </script>
 </body>
 
