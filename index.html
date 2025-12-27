@@ -1368,6 +1368,12 @@
                 padding: 12px 24px;
             }
 
+            .promo-footer {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+
             .promo-footer-center {
                 margin-top: 10px;
             }
@@ -1450,6 +1456,103 @@
             });
         })();
     </script>
+
+    <!-- Floating $299 Button -->
+    <a href="https://shopsite.ca" target="_blank" class="floating-promo-btn" aria-label="$299 Special Offer">
+        <svg class="gift-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <!-- Gift Box -->
+            <rect x="12" y="28" width="40" height="28" fill="none" stroke="white" stroke-width="2.5" />
+            <!-- Ribbon Vertical -->
+            <line x1="32" y1="28" x2="32" y2="56" stroke="white" stroke-width="2.5" />
+            <!-- Ribbon Horizontal -->
+            <line x1="12" y1="42" x2="52" y2="42" stroke="white" stroke-width="2.5" />
+            <!-- Box Top -->
+            <rect x="10" y="22" width="44" height="6" fill="none" stroke="white" stroke-width="2.5" />
+            <!-- Bow Left -->
+            <path d="M 32 22 Q 24 18 20 14 Q 18 12 20 10 Q 22 8 24 10 Q 28 14 32 18" fill="none" stroke="white"
+                stroke-width="2.5" stroke-linecap="round" />
+            <!-- Bow Right -->
+            <path d="M 32 22 Q 40 18 44 14 Q 46 12 44 10 Q 42 8 40 10 Q 36 14 32 18" fill="none" stroke="white"
+                stroke-width="2.5" stroke-linecap="round" />
+            <!-- Bow Center -->
+            <circle cx="32" cy="18" r="3" fill="white" />
+        </svg>
+        <span class="price-text">$299</span>
+    </a>
+
+    <style>
+        .floating-promo-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            text-decoration: none;
+            z-index: 9999;
+            transition: all 0.3s ease;
+            animation: bounce 2s infinite;
+        }
+
+        .floating-promo-btn:hover {
+            transform: scale(1.15);
+        }
+
+        .floating-promo-btn .gift-icon {
+            width: 60px;
+            height: 60px;
+            filter: drop-shadow(0 4px 8px rgba(220, 20, 60, 0.3));
+            transition: all 0.3s ease;
+        }
+
+        .floating-promo-btn:hover .gift-icon {
+            filter: drop-shadow(0 6px 12px rgba(220, 20, 60, 0.5));
+            transform: rotate(-10deg);
+        }
+
+        .floating-promo-btn .price-text {
+            font-size: 2em;
+            letter-spacing: 1px;
+            font-weight: 900;
+            color: #dc143c;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(135deg, #dc143c, #ff0000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .floating-promo-btn {
+                bottom: 20px;
+                right: 20px;
+                gap: 6px;
+            }
+
+            .floating-promo-btn .gift-icon {
+                width: 50px;
+                height: 50px;
+            }
+
+            .floating-promo-btn .price-text {
+                font-size: 1.6em;
+            }
+        }
+    </style>
 </body>
 
 </html>
